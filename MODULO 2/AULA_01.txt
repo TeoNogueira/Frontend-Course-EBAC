@@ -1,0 +1,10 @@
+BACKEND ... ENTREGA ENTRE SERVIDOR E APLICAÇÃO
+
+FRONTEND ... FRONTEND CUIDA DA CODIFICAÇÃO DA INTERFACE
+
+
+
+full stack... server side backend... client side front
+
+
+docker trabalha com virtualização de container

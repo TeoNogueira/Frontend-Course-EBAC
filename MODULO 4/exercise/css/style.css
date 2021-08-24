@@ -1,0 +1,238 @@
+/* MODULO 6 (TEÓFILO NOGUEIRA) */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
+/* UTILIZEI Z-INDEX E POSITIONS APENAS NA HOME DENTRO DA UL + IMG*/
+
+* {
+   box-sizing: border-box;
+   font-family: serif;
+   margin: 0;
+   padding: 0;
+/* overflow: hidden; */
+}
+
+#container {
+
+   max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: #ccc;
+}
+
+
+/* No need :D body {
+  
+  
+} */
+
+/* html or :roots will be rem
+html {
+   font-size: 62.5% tricks HTML Equivale a 10px
+
+} */
+ul, h3 {
+
+   padding: 10px;
+}
+
+ul li a {
+   font-size: 1.2rem; /*  === 12px */
+   list-style: none;
+   text-decoration: none;
+   display: inline-block;
+}
+
+
+ul li a:hover {
+
+color: rgb(172, 146, 90);
+
+
+}
+
+h1, h2, p, li {
+
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+
+color: #858585;
+
+}
+
+header {
+
+   user-select: none;
+  
+   padding: 30px;
+   text-align: center;
+   font-size: 35px;
+   color: white;
+}
+
+
+
+.azul {
+
+   background-color: rgb(117, 139, 173);
+}
+
+/* LOGOTIPO */
+
+.img-ebac {
+
+position: relative;
+right: 550px;
+
+   
+}
+
+
+.img-ebac img {
+width: 150px;
+height: 60px;
+
+}
+
+nav {
+    float: left;
+    width: 30%;
+   background: #ccc;
+   padding: 150px 0 0 102px; 
+   height: 100%;
+   
+ }
+
+ .relative-ul, .ul-two {
+
+   position: relative;
+   z-index: 12;
+ }
+
+nav img {
+
+   width: 500px;
+   position: absolute;
+   top: 22%;
+   left: -46px;;
+  z-index: 1;
+   }
+
+nav ul {
+
+   list-style-type: none;
+   padding-left: 45px;
+   
+} 
+
+nav h3 {
+   padding-left: 45px;
+}
+
+article {
+    user-select: none;
+   float: left;
+   padding: 102px;
+   width: 70%;
+   background-color: #f1f1f1;
+   min-height: 90vh;
+  
+}
+
+section::after {
+content: "";     
+background: #ccc;
+display: table;
+clear: both;
+}
+
+footer {
+
+   position: relative;
+   width: 100%;
+   height: 100px;
+   bottom: 0;
+   /* background-image: url(../images/footer.svg); */
+   /* background-color: rgb(117, 139, 173); */
+      
+}
+
+article  {
+text-align: center;
+    
+}
+
+article div  img {
+
+   border-radius: 180px;
+
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+   nav, article {
+
+       width: 100%;
+       height: auto;
+   }
+}
+
+.redesSociais {
+
+padding-top: 10px;
+color: rgb(90, 94, 107);
+}
+
+.redesSociais:hover {
+
+   cursor: pointer;
+}
+
+.nav-text {
+
+   color: rgb(90, 94, 107);
+
+}
+
+[type="text" ], [type="email"] {
+
+padding-right: 140px;
+
+
+}
+
+textarea {
+
+   padding: 120px;
+}
+
+
+[type="text" ], [type="email"], textarea {
+
+margin-bottom: 20px;
+
+}
+
+
+#article-h1 {
+
+   font-family: 'Fira+Sans';
+   font-size: 26px;
+   font-weight: 700;
+}
+
+
+/* active js  TeoNogueira*/
+
+
+
+.roxo {
+   transition: 1s;  
+   background-color: rebeccapurple;
+}

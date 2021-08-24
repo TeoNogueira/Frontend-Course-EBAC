@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+/* overflow: hidden; */
+}
+
+/* ARTICLE */
+
+article {
+    /* user-select: none; */
+   
+   background: url('../images/bg-desktop.svg');
+   /* float: left; */
+   padding: 80px;
+   width: 70%;
+   background-color: #84919b;
+   text-align: center;
+   position: relative;
+   top: 30px;
+   margin: 0 auto;
+   height: 100%;
+   right: 125px;
+   
+ 
+   /* min-height: 90vh; */
+  
+}
+
+article h2, p, strong {
+
+    user-select: none;
+}
+
+span {
+    /* position: relative;
+    right: 110px; */
+    margin: 0 auto;
+}
+
+
+
+.img-ebac {
+
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    right: -1px;
+    top: 10px;
+}
+
+.height-div {
+    
+    width: 100%;
+    height: 100%;
+}
+    
+    article div  img {
+       border-radius: 180px;
+       height: 100%;
+    
+    }
+
+
+/*  */
+
+section {
+position: relative;
+display: flex;
+min-height: 100vh;
+width: 100%;
+/* padding: 100px; */
+/* justify-content: space-between; */
+align-items: center;
+margin: 0 auto;
+background: #fff;
+}
+
+
+header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%; 
+padding: 20px 100px;
+justify-content: space-between;
+align-items: center;
+display: flex;
+}
+
+
+header .logo {
+
+position: relative;
+max-width: 100px;
+border-radius: 50%;
+
+}
+
+
+header ul {
+
+position: relative;
+display: flex;
+
+}
+
+header ul li {
+
+    list-style: none;
+}
+
+header ul li a {
+
+display: inline-block;
+text-decoration: none;
+color: #333;
+font-weight: 400;
+margin-left: 40px;   
+
+}
+
+
+.mini-container {
+
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    height: 100px;
+
+}
+
+
+div.mini-container {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.mini-container .textBox h2 {
+
+    color: #333;
+    font-size: 4em;
+}
+
+
+.mini-container .textBox  span {
+
+color: rgb(76, 154, 206);
+font-size: 1.2em;
+font-weight: 900;
+
+}
+
+
+
+/* FOOTER  CONTATO ADMIN TEO*/
+
+
+    /* AREA IMAGES */
+
+
+.container-images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.box-image {
+        width: 100%;
+        height: 100px;
+      
+    }
+
+
+    .box-image img {
+
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+        border-radius: 50%;
+      
+
+    }
+
+
+
+/* RANDOM-SECTIONS */
+
+.container-sections {
+
+    display: flex;
+    width: 100%;
+  
+}
+
+.random-sections {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+justify-content: space-around;
+
+}
+
+
+.random {
+   
+    position: relative;
+    width: 233px;
+    height: 153px;
+    /* background: #ccc; */
+    bottom: 80px;
+
+    
+}
+
+
+/* LAYOUT_RESPONSIVE */
+
+/* Mobile First */
+
+
+@media (max-width: 995px) {
+    body {
+
+        overflow-x: hidden;
+
+    }
+    .container-sections {
+        position: relative;
+        left: 250px;
+        display: flex;
+       justify-content: center;
+       
+   }
+
+.random-sections {
+    /* width: 100%; */
+    justify-content: center;
+    background: white;
+    display: block;
+   
+}
+.random {
+    margin-bottom: 100px;
+   
+    display: block;
+}
+
+
+
+}
+
+
+@media (max-width: 759px) {
+
+/* body {
+     overflow-x: hidden;
+   
+    } */
+
+}
+
+
+@media (max-width: 730px) {
+
+section {
+    display: none;
+}
+
+}
+
+
+@media (max-width: 728px) {
+
+
+.random {
+
+    margin-bottom: 0 auto;
+}
+
+.random-sections {
+
+    min-width: 800px;
+}
+
+
+
+ }

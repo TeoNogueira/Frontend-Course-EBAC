@@ -1,0 +1,5 @@
+1 - exercicio layout semantico, iframes, etc..
+2 - produto apliquei os filtros
+3 - responsividade, uma forma diferente ocultando sections. etc..
+
+

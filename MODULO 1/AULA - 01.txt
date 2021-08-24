@@ -1,0 +1,34 @@
+posso atuar em vários locais, pequenas e grandes empresas, posso ser também freelancer.
+frontend: flexibilidade.
+
+
+cloud computing, sass
+
+planejamento:
+
+requisitos, o que é codificável?, objetivos: 
+aonde o usuário deve ser levado, quais os critérios o cliente definiu de aceite.
+
+separar os elementos: ex: textos, imagens, botoes, links, blocos, seções, páginas.
+
+---x---x--
+
+iniciará com Tags HTML, CSS, JS.
+
+outra etapa importante: é a revisão (code/Review) >>> manutenção, reutilização.
+posso verificar se tem muito código, devo ter esse cuidado para nao afetar a performance.
+
+TESTES BUGS
+satisfazer o cliente tratando das situações e resolvendo-as
+evitar carregar arquivos muito grandes.. ex: imagens. videos.. etc..
+velocidade de internet e comunicação de servidor.
+---x---x----x--
+
+OTIMIZAÇÃO MELHORANDO SEMPRE O SEU SITE
+ATINGIR RESULTADO MAIORES
+--X---X--
+
+
+
+
+

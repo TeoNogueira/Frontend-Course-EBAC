@@ -1,0 +1,11 @@
+- SIM - COM JAVASCRIPT
+
+ALGUMAS COISAS PRECISO REALMENTE APRENDER COMO JQUERY, AJAX E TER CONHECIMENTO TAMBÉM EM VUE.JS
+
+E EXERCER A PROFISSÃO REPRESENTANDO A INSTITUIÇÃO (EBAC) NO MERCADO
+
+
+
+comandos:
+
+abri janela do windows, poderia ser também executar depois CMD, entao digito dentro ping www.facebook.com
