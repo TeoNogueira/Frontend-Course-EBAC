@@ -19,7 +19,12 @@
 
 - Explorar conceitos e Técnicas
 - Evolução contínua: dividir o projeto em pequenas partes, testes, ciclos incrementais, revisão...
-- AIDA <<< conceito de atenção, interesse, desejo, ação >>>  LEAD (E-mail).
+- AIDA
+- \\\\      Atenção      ////
+-   \\\    Interesse    ///
+-     \\     Desejo    //
+-       \     Ação    /           call-to-action 4% - 20%
+
 
 
 ## Briefing
