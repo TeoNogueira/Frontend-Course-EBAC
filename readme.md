@@ -2,7 +2,6 @@
 
 # GIT
 
-
 ## Conceitos de versionamento
 
 - Histórico
@@ -19,3 +18,14 @@ Arquivo B | Versão 1 | Versão 2
 ## Instalação do GIT
 
 https://git-scm.com/downloads
+
+
+## GitFlow
+
+Fluxo do Git
+
+### Branchs
+São ramificações / versões paralelas
+
+- Main / Master
+- develop 

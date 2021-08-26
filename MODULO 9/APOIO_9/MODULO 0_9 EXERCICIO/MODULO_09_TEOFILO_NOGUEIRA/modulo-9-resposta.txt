@@ -1,0 +1,29 @@
+Comentário do professor
+
+Não encontrei a responsividade... pra qual tamanho de tela foi desenvolvido?
+
+
+
+A imagem que está no produto.html está muito grande, corrigir o tamanho.
+
+
+
+Percebi que está clicavel mas não redireciona...
+
+--x----x-----------------x-----x----------------x-----
+
+
+
+Olá Beatriz tudo bem?! boa tarde..
+
+Sobre a responsividade eu fiz,
+só que conforme o professor explica na aula que seria de acordo com que o aluno achasse melhor sobre o conteúdo da responsividade, seja celular, tablet, ou PC.
+Outra coisa é como o curso procede... percebo que durante alguns módulos,
+ o professor explica conceitos embora peça pra desenvolver algo mas nesse ele focou somente a responsividade,
+ como achei o conteúdo vago fiz numa tela melhor pra que pudesse mostrar que compreendi, 
+se a foto ficou deixei propositalmente..
+pra mostrar o conceito de filter... lembrando que não estava desenvolvendo um projeto e sim um conceito o cursor pointer nem sempre é para indicar que vou entrar num link ou em outro local pode ser também um simbólico.
+
+Deixei cada conceito em um lugar separado pra mostrar que realmente entendi o que o professor está fazendo.
+
+Agradeço o Feedback! <3
