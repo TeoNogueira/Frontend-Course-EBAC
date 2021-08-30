@@ -6,15 +6,18 @@
 /* Círculo*/
 #grafico-01 {
     background-color: brown;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 #grafico-01 img {
-    width: 100%;
+
     height: auto;
+    max-width: 100%;
 }
 
 /* Triângulo */
@@ -31,6 +34,34 @@
 }
 
 #canvas {
-    height: 120px;
-    /* width: 300px; */
+    height: 300px;
+    width: 300px;
+    
 }
+
+/* Filtros */
+
+
+    /* FILTERS */
+
+
+    .filtro {
+
+        filter: grayscale(100%); /* Cinza */
+        /* filter: blur(5px); Desfoque */
+        /* filter: brightness(20%); /* Brilho 100% = normal*/
+        /* filter: invert(100%);
+        filter: opacity(90%); */ 
+        /* filter: saturate(200%) sepia(50%);  */
+        /* filter: drop-shadow(5px 5px 7px #ccc); */
+      
+    }
+    
+
+    .filtro:hover {
+
+        filter: grayscale(50%); /*cinza*/
+        filter: drop-shadow(8px 8px 210px #ccc);
+    }
+
+

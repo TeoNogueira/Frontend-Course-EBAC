@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>MODULO 9</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 	<!-- PODERIA SER UM IMPORT PARA O CSS -->
+	
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/graficos.css">
+	
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end</h2>
+			<p>Aprenda do Zero ao Pro</p>
+			<!-- <div><h2>EBAC</h2></div> -->
+			<!-- <h5>Escola Britânica de Artes Criativas e Tecnologia</h5>
+			<p>Aprenda de modo prático</p> -->
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas</h3><br>
+				<ul class="navegacao">
+					<li><a href="modulo-07.html">Módulo 07</a></li>
+					<li id="primeiro-link"><a href="01-introducao.html">Introdução</a></li>
+					<li><a href="02-listas-e-links.html">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+					<li><a href="05-layouts.html">Layouts</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+				</ul>
+
+			</nav>
+
+			<article>
+
+
+
+
+				<div class="coluna">
+					<h3>Youtube</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/NjSV-hQIE48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				 </div>
+             <div class="coluna">
+				 
+                <div id="grafico-01">
+                    <img class="filtro" src="./images/coffee-square.jpg" alt="café" >
+                </div>
+			 </div>
+             
+               
+
+			<div class="coluna coluna-100w">
+				<iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q= R. Áureliano Coutinho, 109 - Santa Cecilia, São Paulo - SP, 01224-020&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+			</div>
+
+
+
+            </article>
+
+       
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Teo Nogueira</p>
+		</footer>
+
+
+		 <script>
+        // Propriedade Importante!
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#00FF99";
+        ctx.fillRect(80, 0, 100, 80);
+    </script>
+	</body>
+</html>
