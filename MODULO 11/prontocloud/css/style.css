@@ -1,43 +1,77 @@
 body {
 background-color: #ccc;
 font-size: 62.5%;
+font-family: 'Poppins', sans-serif;
 }
 
 .main-container {
 
-   background: #fff;
+    background: rgb(170, 173, 182);
     max-width: 1198px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
 }
 
 header {
-
+    padding: 20px;
 }
 
 
 section {
+    
+    width: 100%;
     font-size: 1.5rem;   /* 15px */
+}
 
+h1 {
+    font-size: 2.4rem;
+    color: #254159;
+}
+
+h2 {
+
+    font-size: 2rem;
+}
+
+h3 {
+
+font-size: 1.8rem;
 
 }
 
 
+h4 {
+    
+font-size: 1.6rem;
+
+}
+
 section nav {
-
-
-
+padding: 20px;
+display: block;
+float: left;
+width: 30%;
 }
 
 
 section article {
-
+    padding: 20px;
+    display: block;
+    float: left;
+    width: 70%;
 
 }
 
 
 footer {
-
-
-
+    padding: 20px;
+   display: flex;
+     float: left;
+     width: 100%;
+    background: #254159;
+    height: 50px;
+    justify-content:center;
+    align-items: center;
+    font-size: 19px;
+    /* color: #50779e; */
 }
