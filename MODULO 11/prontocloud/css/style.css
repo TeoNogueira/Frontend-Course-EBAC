@@ -1,61 +1,126 @@
 body {
-background-color: #ccc;
+
 font-size: 62.5%;
 font-family: 'Poppins', sans-serif;
 }
 
+.container {
+
+    width: 100%;
+    /* padding: 20px; */
+  
+    display: block;
+    float: left;
+}
+
+
 .main-container {
 
-    background: rgb(170, 173, 182);
-    max-width: 1198px;
-    margin: 0 auto;
-    padding: 25px;
+    /* background: rgb(170, 173, 182); */
+    max-width: 1396px;
+    /*  */
+    /* width: 100vw; */
+    /* padding: 20px; */
 }
 
 header {
+    background: #efefef;
     padding: 20px;
+    display: block;
+    float: left;
+    width: 100%;
+    border-bottom:  1px solid #4f7ca3;
 }
 
 
 section {
-    
+    background-color: #cad1d6;
+    float: left;
+    padding: 100px 0 60px 0;
     width: 100%;
-    font-size: 1.5rem;   /* 15px */
+    font-size: 1.5rem;   /* 11px */
 }
 
 h1 {
+    margin: 10px 0 20px 0;
     font-size: 2.4rem;
     color: #254159;
 }
 
 h2 {
-
+    margin: 10px 0 20px 0;
     font-size: 2rem;
 }
 
 h3 {
-
+margin: 10px 0 20px 0;
 font-size: 1.8rem;
 
 }
 
 
 h4 {
-    
+margin: 10px 0 20px 0;
 font-size: 1.6rem;
 
 }
 
+/*  */
+p {
+    word-break: break-word;
+margin-bottom: 10px;
+line-height: 1.4;
+
+}
+
+
+ol {    
+    margin-left: 30px;
+}
+
+ol li {
+
+    font-size: 1.4rem;
+    color: #454545;
+}
+
+
+/*  */
+
 section nav {
-padding: 20px;
+/* padding: 20px; */
 display: block;
 float: left;
 width: 30%;
 }
+nav ul {
+    padding: 22px;
+    list-style: none;
+}
+ul li a {
+    color: #333;
+    text-decoration: none;
+}
+nav li:hover {
 
+    background-color: #a4c4db;
+}
+
+ul li a:hover {
+    
+    color: #4f7ca3;
+}
+
+nav li {
+    background-color: #efefef;
+    margin: 1px 20px 1px 0;
+    padding: 10px;
+}
+
+/*  */
 
 section article {
-    padding: 20px;
+    /* padding: 20px; */
     display: block;
     float: left;
     width: 70%;
@@ -63,15 +128,32 @@ section article {
 }
 
 
+/* FOOTER */
+
+
 footer {
+
     padding: 20px;
-   display: flex;
-     float: left;
-     width: 100%;
+    /* display: flex; */
+    float: left;
+    width: 100%;
     background: #254159;
-    height: 50px;
-    justify-content:center;
-    align-items: center;
-    font-size: 19px;
+    /* justify-content:center; */
+    /* align-items: center; */
+  
     /* color: #50779e; */
+}
+
+
+footer p {
+
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+footer small {
+
+    font-size: 80%;
+    display: block;
+
 }
