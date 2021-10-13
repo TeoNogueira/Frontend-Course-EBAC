@@ -2,13 +2,15 @@ body {
 
 font-size: 62.5%;
 font-family: 'Poppins', sans-serif;
+
 }
+
+
 
 .container {
 
     width: 100%;
     /* padding: 20px; */
-  
     display: block;
     float: left;
 }
@@ -150,6 +152,8 @@ footer p {
     color: #fff;
     font-size: 1.1rem;
 }
+
+
 
 footer small {
 
