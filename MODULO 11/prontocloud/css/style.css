@@ -49,6 +49,11 @@ h1 {
     color: #254159;
 }
 
+h1 .cog-heading {
+
+    
+}
+
 h2 {
     margin: 10px 0 20px 0;
     font-size: 2rem;
@@ -136,16 +141,60 @@ section article {
     visibility: hidden !important;
     
 }
-.cog-branding__powered {
-    
+
+
+
+div.cog-row {
+
+    display: flex !important;
+    justify-content: center !important;
 }
 
 
+div.cog-input {
+/* width: 100%  !important; */
 
+}
+
+html .cog-cognito--styled .cog-button--primary, html .cog-cognito--styled .cog-page__navigation .cog-button, :root:root:root:root:root .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-page__navigation .cog-button {
+    
+    /* width: 100% !important; */
+    position: relative !important;
+    right: -44%;
+}
+ 
+
+
+svg.cog-icon.cog-i-cogicon {
+
+visibility: hidden !important;
+
+}
+.html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after { 
+
+    background: #6f809e;
+    }
+    .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-button--primary { 
+    
+    
+    
+    
+    }
+    span .cog-button__text {
+    
+        background: #666 !important;
+    }
+    
 /* FOOTER */
 
 
-footer {
+
+
+
+
+
+    
+footer { 
 
     padding: 20px;
     /* display: flex; */
