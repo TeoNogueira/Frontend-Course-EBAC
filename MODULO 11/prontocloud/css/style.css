@@ -163,11 +163,15 @@ html .cog-cognito--styled .cog-button--primary, html .cog-cognito--styled .cog-p
     right: -44%;
 }
  
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 svg.cog-icon.cog-i-cogicon {
 
 visibility: hidden !important;
+display: none !important;
 
 }
 .html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after { 
@@ -176,14 +180,14 @@ visibility: hidden !important;
     }
     .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-button--primary { 
     
-    
-    
-    
     }
     span .cog-button__text {
     
         background: #666 !important;
     }
+
+
+
     
 /* FOOTER */
 
@@ -211,11 +215,15 @@ footer {
 
 footer p {
 
-    color: #fff;
+    color: #080808;
     font-size: 1.1rem;
 }
 
+.cog-icon .cog-i-cogicon {
 
+visibility: hidden !important;
+
+}
 
 footer small {
 
@@ -223,3 +231,19 @@ footer small {
     display: block;
 
 }
+
+
+.footerT {
+    align-items: center;
+    display: flex;
+    background: #cad1d6;
+
+}
+
+/* github */
+img.github {
+
+    width: 50px;
+    border-radius: 80%;
+}
+
