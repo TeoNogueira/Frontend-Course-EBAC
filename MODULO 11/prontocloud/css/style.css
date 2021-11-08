@@ -34,6 +34,10 @@ header {
     border-bottom:  1px solid #4f7ca3;
 }
 
+header:hover {
+    cursor: pointer;
+}
+
 
 section {
     background-color: #cad1d6;
