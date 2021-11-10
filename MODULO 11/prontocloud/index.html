@@ -30,11 +30,29 @@
 
         <section>
             <nav>
-             <ul>
+             <ul id="principal">
                 <li><a href="#guia">Guia</a></li>
                 <li><a href="#plan">Planejamento </a></li>
                 <li><a href="#ti">Tenho interesse</a></li>
             </ul>
+
+              <!-- MENU BAR RESPONSIVE -->
+
+            <div id="menu-bar">
+                <div id="menu" onclick="clickedMenu()">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+                
+                <ul class="nav" id="nav">
+
+                    <li><a href="#guia">Guia</a></li>
+                    <li><a href="#plan">Planejamento </a></li>
+                    <li><a href="#ti">Tenho interesse</a></li>
+                </ul>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
             </nav>
             <article>
                 <div class="container">
@@ -110,6 +128,6 @@
     </footer>
 </div>
 </div>
-</body>
+<script src="../js/menu.js"></script>
 
 </html>
