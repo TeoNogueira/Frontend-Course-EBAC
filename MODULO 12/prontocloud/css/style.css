@@ -96,7 +96,7 @@ ol li {
 /*  */
 
 section nav {
-/* padding: 20px; */
+padding: 20px 0;
 display: block;
 float: left;
 width: 30%;
@@ -197,7 +197,7 @@ display: none !important;
     
 footer { 
 
-    padding: 20px;
+    padding: 20px 0;
     /* display: flex; */
     float: left;
     width: 100%;
@@ -487,7 +487,7 @@ transform: translate(-60%, -30%);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .6);
     padding: 20px;
-    margin-bottom;
+    margin-bottom: 20px;
 }
 
 .legenda h5,
@@ -499,12 +499,73 @@ transform: translate(-60%, -30%);
 
 .button-cta {
 
-display: block;
+border-radius: 25px;
+display: inline;
 background-color: orangered;
 color: #fff;
-font-size: 2rem;
-box-shadow: 2px 2px 4px black;
+font-size: 1.8rem;
+box-shadow: 1px 1px 4px rgb(59, 58, 58);
 padding: 10px 15px;
-
+text-decoration: none;
 width: auto;
+font-weight: 300;
+
 }
+
+
+.button-cta:hover {
+
+    opacity: 0.9;
+
+}
+
+/* SAIBA MAIS */
+
+
+#saiba-mais {
+        
+    
+    background-color: #eaeff3;
+    padding: 40px 20px;
+}
+
+#saiba-mais p,
+#saiba-mais img {
+
+
+    width: 45%;
+    display: block;
+    float: left;
+};
+
+/* DL DT DD */
+
+
+
+dl {
+ 
+    margin: 20px 0 0;
+}
+
+
+
+
+dt {
+
+
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+dd { 
+
+
+margin-left: 20px;
+margin-bottom: 20px;
+
+}
+
+
+
+    
