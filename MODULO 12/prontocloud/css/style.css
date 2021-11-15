@@ -531,8 +531,8 @@ font-weight: 300;
 
 #saiba-mais p,
 #saiba-mais img {
-
-
+    padding: 0 20px;
+    padding-left: 20px;
     width: 45%;
     display: block;
     float: left;
@@ -567,5 +567,8 @@ margin-bottom: 20px;
 }
 
 
+.alternate-button {
+    padding-top: 30px;
 
+}
     
