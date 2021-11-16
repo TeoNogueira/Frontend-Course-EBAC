@@ -288,6 +288,45 @@ section article {
 }
 
 @media (max-width: 768px) {
+
+  
+
+    #saiba-mais p,
+     #saiba-mais img {
+        padding: 35px 0 0 0 !important; 
+        padding-left: 20px  !important;
+        width: 85%  !important;
+        display: block  !important;
+        float: left  !important;
+    }
+
+
+    #banner {
+        width: 100%;
+        background-image: url('../images/banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* width: 98vw; */
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .button-cta  {
+        width: 100%;
+        border-radius: 0px;
+        display: inline;
+        background-color: orangered;
+        color: #fff;
+        font-size: 9.2rem;
+        box-shadow: 1px 1px 4px rgb(59, 58, 58);
+        padding: 5px 8px;
+        text-decoration: none;
+        width: auto;
+        font-weight: 300;
+        
+        }
+
     .nav {
 
         padding: 0;
@@ -311,6 +350,74 @@ img {
 
  }
 
+
+ /* BUTTON CTA */
+
+
+@media (max-width: 375px) {
+    #banner {
+
+        width: 100%;
+    }
+
+    .legenda-container {
+     
+        position: relative;
+        right: 90px;
+        padding: 0 0px;
+        max-width: 100%;
+    }
+
+
+    .legenda {
+    
+        
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, .6);
+        padding: 0 35px 0 0 !important;
+        margin-bottom: 50px;
+    }
+
+ 
+    .button-cta  {
+        
+        /* margin-right: 15px 0 0 !important; */
+        width: 100% !important;
+        border-radius: 10px !important;
+        display: inline !important;
+        background-color: orangered;
+        color: rgb(158, 42, 42) ;
+        font-size: 0.7rem !important;
+        box-shadow: 1px 1px 4px rgb(59, 58, 58);
+        padding: 2px 3px !important;
+        text-decoration: none;
+        /* width: auto; */
+        font-weight: 300;
+        
+        }
+
+
+}
+
+@media (max-width: 635px) {
+
+    .button-cta  {
+        width: 100% !important;
+        border-radius: 25px !important;
+        display: inline;
+        background-color: orangered;
+        color: #fff;
+        font-size: 1.2rem !important;
+        box-shadow: 1px 1px 4px rgb(59, 58, 58);
+        padding: 10px 8px !important;
+        text-decoration: none;
+        /* width: auto; */
+        font-weight: 300;
+        
+        }
+}
+
+
  @media (max-width: 741px) {
  
 #principal {
@@ -333,6 +440,20 @@ img {
         font-size: 1.1rem;
         width: 100%;
     }
+}
+
+@media (max-width: 1043px) {
+
+    #saiba-mais p,
+     #saiba-mais img {
+        padding: 35px 0 0 0 !important; 
+        padding-left: 20px  !important;
+        width: 85%  !important;
+        display: block  !important;
+        float: left  !important;
+    }
+
+    
 }
 
 
