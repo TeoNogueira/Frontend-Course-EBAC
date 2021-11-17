@@ -7,7 +7,7 @@ function calcMedia() {
 
        var media = (a + b + c) / 3;
    
-   document.getElementById("resultado").innerHTML = media;
+   document.getElementById("resultado").innerHTML = "Resultado:" + media;
 
 
 }
