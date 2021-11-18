@@ -10,9 +10,10 @@ while(hora > 0) {
 
 }
 
-
 do {
+
 execucao
+
 }
 
 while(condicao)
