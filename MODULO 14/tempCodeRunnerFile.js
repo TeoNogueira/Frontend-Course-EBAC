@@ -1,2 +1,2 @@
 
-// console.log(calcMedia([10, 2]))
+console.log("Média " + calcMedia([8, 8]))

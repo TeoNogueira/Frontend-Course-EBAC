@@ -1,0 +1,1 @@
+- Eu uso a extensão coderunner dentro do vscode pra trazer o resultado dentro do terminal, por isso estou somente usando os arquivos js.
