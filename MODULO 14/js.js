@@ -32,3 +32,4 @@ if(mediaTeo > 7) {
 
   console.log('Aluno Aprovado!')
 }
+

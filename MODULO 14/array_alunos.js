@@ -1,3 +1,13 @@
+var alunos = [
+    [3, 2, 8, 7],
+    [8, 9, 4, 9,],
+    [10, 8, 7, 8,]
+
+]
+
+
+
+
 var nota = 0
 
 
@@ -29,3 +39,5 @@ resultado = "aprovado";
 console.log("Resultado: " + resultado)
 
 };
+
+
