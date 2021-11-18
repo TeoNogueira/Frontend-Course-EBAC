@@ -1,6 +1,6 @@
 
 
-function calcMedia(notas) {
+function calcMedia( notas) {
 
 
     var soma = 0
@@ -15,9 +15,25 @@ function calcMedia(notas) {
     media = soma / notas.length;
 
 
-
     return media
 }
 
+//  aprovação ou reprovação
 
-console.log(calcMedia([9, 2]))
+function aprovacao(media) {
+
+let condicao = media >= 7 ? 'Aprovado' : 'Reprovado'
+
+return condicao
+
+}
+
+
+
+const aprovadoOuReprovado = aprovacao(5)
+
+const resultado = `${aprovadoOuReprovado} ${calcMedia([5, 5])}`
+
+console.log(resultado)
+
+
