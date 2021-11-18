@@ -1,1 +1,5 @@
-5
+console.log(booksBox.addBooks(2))
+// console.log(booksBox.addBooks(2))
+// console.log(booksBox.addBooks(2))
+// console.log(booksBox.addBooks(2))
+// console.log(booksBox.addBooks(5)
