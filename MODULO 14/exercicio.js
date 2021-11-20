@@ -53,8 +53,7 @@
 // d) var cavalo = carro == “preto” ? “cinza” : “marron”; << resposta = "cinza"
 // e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada 
 // de 3.000? Demonstre a operação. << resolver
-// f) Somando as variáveis de cores é formada uma string de quantos caracteres? RESPOSTA: 15 CARACTERES.
-
+// f) Somando as variáveis de cores é formada uma string de quantos caracteres? RESPOSTA: 16 CARACTERES DE ACORDO AS VARIÁVEIS DE CORES ABAIXO.
 
 
 var branco = "preto"; 
@@ -63,6 +62,7 @@ var cinza = "branco";
 var carro = "preto";
 var valor = 30000;
 var prestacao = 750;
+
 
 var cavalo  = carro == "preto" ? "cinza" : "marron";
 
@@ -84,7 +84,7 @@ let total = totalDepoisDaEntradaDeDezPorcento / parcelaValor
 function mostrarTotal() {
 
 
-return  document.getElementById("parcelas").innerHTML = `Resultado: Você irá pagar o valor de ${total} parcelas de R$ 750,00 sem juros`
+return document.getElementById("parcelas").innerHTML = `Resultado: Você irá pagar o valor de ${total} parcelas de R$ 750,00 sem juros`
 
 }
 
