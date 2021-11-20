@@ -67,7 +67,7 @@ var prestacao = 750;
 var cavalo  = carro == "preto" ? "cinza" : "marron";
 
 
-// console.log(cavalo)
+console.log(cavalo)
 
 // console.log(10 + 10 * 2)
 
@@ -81,10 +81,9 @@ let total = totalDepoisDaEntradaDeDezPorcento / parcelaValor
 // RESULTADO: 36 PARCELAS DE 750
 
 
-function mostrarTotal() {
-
-
-return document.getElementById("parcelas").innerHTML = `Resultado: Você irá pagar o valor de ${total} parcelas de R$ 750,00 sem juros`
+const mostrarTotal = () => {
+ 
+   return document.getElementById("parcelas").innerHTML = `Resultado: Você irá pagar o valor de ${total} parcelas de R$ 750,00 sem juros!`
 
 }
 
