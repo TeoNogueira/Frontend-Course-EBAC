@@ -58,6 +58,7 @@ document.addEventListener('submit', (event) => {
 
 event.preventDefault()
 
+event.stopPropagation()
 
 let formulario = document.getElementById('formulario');
 
