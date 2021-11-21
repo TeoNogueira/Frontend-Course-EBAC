@@ -52,7 +52,7 @@
 // c) carro === branco true
 // d) var cavalo = carro == “preto” ? “cinza” : “marron”; << resposta = "cinza"
 // e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada 
-// de 3.000? Demonstre a operação. << resolver
+// de 3.000? Demonstre a operação. << resolver 
 // f) Somando as variáveis de cores é formada uma string de quantos caracteres? RESPOSTA: 16 CARACTERES DE ACORDO AS VARIÁVEIS DE CORES ABAIXO.
 
 

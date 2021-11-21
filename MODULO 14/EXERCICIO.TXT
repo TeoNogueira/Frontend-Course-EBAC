@@ -1,4 +1,4 @@
-
+﻿
 // Exercicio
 
 
@@ -46,4 +46,14 @@
 
 
 
+
+// a) branco == “branco” true
+// b) branco == cinza false
+// c) carro === branco true
+
+
+// d) var cavalo = carro == “preto” ? “cinza” : “marron”; //>>>> resposta = "cinza"<<<<
+
 // RESULTADO: 36 PARCELAS DE 750
+
+// RESPOSTA: 16 CARACTERES DE ACORDO AS VARIÁVEIS DE CORES ABAIXO.
