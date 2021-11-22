@@ -50,9 +50,9 @@ return 'Média: ' + media + ' - Resultado: ' + condicao;
 //     contagemRegressiva(10)
 
 
-
-
 // EVENTOS:
+
+// GERAR CALCULO DA MEDIA COM NOME
 
 document.getElementById('formulario').addEventListener('submit', function(event) {
 
@@ -62,17 +62,16 @@ event.stopPropagation()
 
  //document.getElementById('formulario');
 
-
 let dados = new FormData(this)
-
-
-let objetos = {};
 
 let notas = [];
 
 for(let key of dados.keys()) {
 
-    objetos[key] = dados.get(key)
+    let numero = parseFloat(dados.get(key)); // é um número;
+
+
+    if(typeof numero == '') 
 
     notas.push(parseInt(dados.get(key)));
 
