@@ -68,23 +68,32 @@ let notas = [];
 
 for(let key of dados.keys()) {
 
-    let numero = parseFloat(dados.get(key)); // é um número;
+    let numero = dados.get(key); // é um número;
 
+    if(typeof numero == 'number ') {
 
-    if(typeof numero == '') 
+        notas.push(numero);
+        // notas.push(parseInt(dados.get(key)));
+    }
 
-    notas.push(parseInt(dados.get(key)));
+ 
 
 }
 
 
 console.log(notas)
 
-console.log(objetos)
+console.log()
 
-document.getElementById('resultado').innerHTML = aprovacao(notas)
+let text = aprovacao(notas)
 
-console.log(aprovacao(notas))
+document.getElementById('resultado').innerHTML = texto;
+
+// console.log(objetos)
+
+// document.getElementById('resultado').innerHTML = aprovacao(notas)
+
+
 
 })
 
