@@ -34,17 +34,17 @@ return 'Média: ' + media + ' - Resultado: ' + condicao;
 
 }
 
-// function recursiva(numero) {
+function recursiva(numero) {
 
-//     console.log(numero)
+    console.log(numero)
     
-//   let proximoNumero = -1
+  let proximoNumero = -1
 
-//   if(proximoNumero > 0) 
+  if(proximoNumero > 0) 
   
-//   contagemRegressiva(proximoNumero)
+  contagemRegressiva(proximoNumero)
 
-//     }
+    }
     
     
 //     contagemRegressiva(10)
@@ -81,7 +81,7 @@ for(let key of dados.keys()) {
     if(!isNaN(numero)) {
 
         notas.push(numero);
-        // notas.push(parseInt(dados.get(key)));
+      
     }
 
 }
@@ -93,9 +93,7 @@ let texto = aprovacao(notas)
 
 document.getElementById('resultado').innerHTML = texto;
 
-// console.log(objetos)
 
-// document.getElementById('resultado').innerHTML = aprovacao(notas)
 
 })
 
@@ -171,7 +169,7 @@ elemento.addEventListener('focusout', function(evento) {
 
 evento.preventDefault()
 
-const emailValido =  /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
 
 
 if(this.value.match(emailValido)) {
@@ -223,28 +221,4 @@ for(let emFoco of camposNumericos) {
         validaEmail(emFoco);
         
         }
-
-// console.log(aprovacao([5, 8, 7]))
-
-
-// console.log(aprovacao([5, 8, 7, 8]))
-
-
-
-// console.log("Média " + calcMedia([8, 8]))
-
-// console.log(aprovacao(calcMedia([8, 8])))
-
-// console.log("Média " + calcMedia([5, 7]))
-
-// console.log(aprovacao(calcMedia([7, 7])))
-
-
-// const aprovadoOuReprovado = aprovacao(5)
-
-// const resultado = `${aprovadoOuReprovado} ${calcMedia([5, 5])}`
-
-// console.log(resultado)
-
-
 
