@@ -54,13 +54,21 @@ return 'Média: ' + media + ' - Resultado: ' + condicao;
 
 // GERAR CALCULO DA MEDIA COM NOME
 
-document.getElementById('formulario').addEventListener('submit', function(event) {
+const formulario = document.getElementById('formulario')
+
+if(formulario)
+
+ formulario.document.getElementById('formulario').addEventListener('submit', function(event) {
 
 event.preventDefault()
 
 event.stopPropagation()
 
- //document.getElementById('formulario');
+if(this.getAttribute('class').match(/erro/)) {
+
+    return false
+}
+
 
 let dados = new FormData(this)
 
@@ -68,7 +76,7 @@ let notas = [];
 
 for(let key of dados.keys()) {
 
-    let numero = dados.get(key); // é um número;
+    let numero = dados.get(key).match(/\d*/) ? Number(dados.get(key)) : 0; // é um número;
 
     if(typeof numero == 'number ') {
 
@@ -93,12 +101,41 @@ document.getElementById('resultado').innerHTML = texto;
 
 // document.getElementById('resultado').innerHTML = aprovacao(notas)
 
+})
+
+
+function validaCampo(elemento) {
+
+elemento.addEventListener('focusout', function(event){
+
+
+event.preventDefault();
+
+if(this.value == "") {
+
+document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho"
+
+this.classList.add('erro');
+this.parentNode.classList.add('erro');
+
+return false;
+
+} else {
+    document.querySelector('.mensagem').innerHTML = "";
+    this.classList.remove('erro');
+    this.parentNode.classList.remove('erro');
+
+
+}
+
+
 
 
 })
 
 
 
+}
 
 
 
