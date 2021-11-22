@@ -84,8 +84,6 @@ for(let key of dados.keys()) {
         // notas.push(parseInt(dados.get(key)));
     }
 
- 
-
 }
 
 
@@ -123,14 +121,11 @@ return false;
     this.classList.remove('erro');
     this.parentNode.classList.remove('erro');
 
-
 };
-
 
 });
 
 };
-
 
 
 function validaCampoNumerico(elemento) {
@@ -144,7 +139,7 @@ event.preventDefault()
 
     let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value;
 
-    if(numero != "" && numero.match(/[0-9]*/) >= 0 && numero <= 10) {
+    if(numero != "" && numero.match(/[0-9]*/)  && numero >= 0 && numero <= 10) {
 
 
         document.querySelector('.mensagem').innerHTML = "";
@@ -163,7 +158,6 @@ event.preventDefault()
         this.parentNode.classList.add('erro');
 
         return false;
-
 
     }
 
@@ -184,8 +178,6 @@ if(this.value.match(emailValido)) {
 
     document.querySelector('.mensagem').innerHTML = "";
 this.classList.remove('erro');
-
-
 this.parentNode.classList.remove('erro');
 
 } else {
@@ -197,21 +189,18 @@ this.parentNode.classList.remove('erro');
     this.parentNode.classList.add('erro')
 
     return false
-} 
+}; 
 
+});
 
-
-})
-
-
-}
+};
 
 
 // queriesInput
 
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 
-let camposNumericos = document.querySelectorAll('input.numero');
+let camposNumericos = document.querySelectorAll('input.numerico');
 
 let camposEmail = document.querySelectorAll('input.email')
 
@@ -222,14 +211,14 @@ validaCampo(emFoco);
 
 }
 
-for(let emFoco of camposObrigatorios) {
+for(let emFoco of camposNumericos) {
 
     validaCampoNumerico(emFoco);
     
     }
 
 
-    for(let emFoco of camposObrigatorios) {
+    for(let emFoco of camposEmail) {
 
         validaEmail(emFoco);
         
