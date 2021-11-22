@@ -54,16 +54,16 @@ return 'Média: ' + media + ' - Resultado: ' + condicao;
 
 // EVENTOS:
 
-document.addEventListener('submit', (event) => {
+document.getElementById('formulario').addEventListener('submit', function(event) {
 
 event.preventDefault()
 
 event.stopPropagation()
 
-let formulario = document.getElementById('formulario');
+ //document.getElementById('formulario');
 
 
-let dados = new FormData(formulario)
+let dados = new FormData(this)
 
 
 let objetos = {};
