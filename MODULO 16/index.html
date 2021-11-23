@@ -5,43 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/styles/custom.css">
     <title>Document</title>
 </head>
 <body>
     
-<div class="container container-fluid">
 
-<div class="row">
-<div class="col">
-    <h1>Coluna 1</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
-    <a class="btn btn-lg btn-success">Botão</a>
-</div>
-    <div class="col">
-        <h2>Coluna 2</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-        <a class="btn btn-sm btn-danger">Botão</a>
-    </div>
-  
-</div>
-</div>
-
+<header>
 <div class="container">
 
     <div class="row">
-        <div class="col-5 col-sm-12">Linha 1 - Coluna 1</div>
-        <div class="col-7 col-sm-12">Linha 1 - Coluna 2</div>
-    </div>
-    <div class="row">
-        <div class="col">Linha 3 - Coluna 1</div>
-        <div class="col">Linha 3 - Coluna 2</div>
-        <div class="col">Linha 3 - Coluna 3</div>\
-        
+        <div class="col">
+
+            <h1>Logo</h1>
+        </div>
+
+        <div class="col">
+
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
     </div>
 </div>
+
+</header>
+
+
+<section id="sobre">
+
+
+    <div class="container">
+
+        <div class="row">
+        <div class="col-md-7 col-sm-12">
+            <h2>Sobre nós</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <a class="btn btn-lg btn-success">Botão</a>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="./bootstrap/img/pexels_1.jpg" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- SECTION-02 -->
+
+<section id="produtos">
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col">
+                <h2>Produtos</h2>
+
+                <div class="card">
+                    <img class="btn btn-primary" src="./bootstrap/img/pexels_3.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+
+                    <h5 class="card-title">LorenaIpsep</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                 <a href="#produto-1">ver produto</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="btn btn-primary" src="./bootstrap/img/pexels_3.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+
+                    <h5 class="card-title">LorenaIpsep</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                 <a href="#produto-2">ver produto</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="btn btn-primary" src="./bootstrap/img/pexels_3.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+
+                    <h5 class="card-title">LorenaIpsep</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                 <a href="#produto-3">ver produto</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTATO -->
+
+<section id="contato">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+        <h2>Contato</h2>
+        <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+        </div>
+        
+        <div class="col-md-6 col-sm-12">
+            <form class="form">
+                <div class="input-group">
+                    <input class="form-control" type="text" name="nome"  placeholder="digite seu nome">
+                </div>
+                <div class="input-group">
+                    <input class="form-control" type="text" name="email"  placeholder="digite seu email">
+                </div>
+                <div class="input-group">
+                    <textarea class="form-control" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</section>
 
 
 
