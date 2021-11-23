@@ -1,0 +1,8 @@
+.row>.col*3
+
+
+md <<<< resoluçao media
+
+sm-12 === small <<<< para smartphone tbm. o doze significa a fração toda (linha inteira);
+
+
