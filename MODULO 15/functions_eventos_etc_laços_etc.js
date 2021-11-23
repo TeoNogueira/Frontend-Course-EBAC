@@ -202,6 +202,7 @@ let camposNumericos = document.querySelectorAll('input.numerico');
 
 let camposEmail = document.querySelectorAll('input.email')
 
+let camposUf = document.querySelectorAll('input.uf');
 
 for(let emFoco of camposObrigatorios) {
 
