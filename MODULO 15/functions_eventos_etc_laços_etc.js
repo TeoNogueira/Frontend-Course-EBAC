@@ -1,15 +1,10 @@
-
-
 function calcMedia( notas) {
-
-
-    var soma = 0
+  
+    let soma = 0
 
     for( c = 0; c < notas.length; c++) {
 
-
         soma += notas[c];
-
     }
 
     media = soma / notas.length;
@@ -38,11 +33,11 @@ function recursiva(numero) {
 
     console.log(numero)
     
-  let proximoNumero = -1
+  let proximoNumero = numero -1
 
   if(proximoNumero > 0) 
   
-  contagemRegressiva(proximoNumero)
+  recursiva(proximoNumero)
 
     }
     
@@ -89,7 +84,7 @@ for(let key of dados.keys()) {
 
 console.log(notas)
 
-let texto = aprovacao(notas)
+texto = aprovacao(notas)
 
 document.getElementById('resultado').innerHTML = texto;
 
@@ -132,8 +127,6 @@ function validaCampoNumerico(elemento) {
 
 event.preventDefault()
 
-    })
-
 
     let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value;
 
@@ -158,6 +151,7 @@ event.preventDefault()
         return false;
 
     }
+});
 
 }
 
@@ -179,10 +173,7 @@ this.classList.remove('erro');
 this.parentNode.classList.remove('erro');
 
 } else {
-
-
     document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
-
     this.classList.add('erro');
     this.parentNode.classList.add('erro')
 
