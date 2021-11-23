@@ -194,7 +194,7 @@ function validaUf(elemento) {
     
     evento.preventDefault()
     
-    const ufValido = /^[a-z]-[a-z]?$/i;
+    const ufValido = /^[a-z]{2}?$/i;
     
     
     if(this.value.match(ufValido)) {
@@ -204,7 +204,7 @@ function validaUf(elemento) {
     this.parentNode.classList.remove('erro');
     
     } else {
-        document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+        document.querySelector('.mensagem').innerHTML = "ponha apenas dois caracteres de a-z para o seu ESTADO";
         this.classList.add('erro');
         this.parentNode.classList.add('erro')
     
