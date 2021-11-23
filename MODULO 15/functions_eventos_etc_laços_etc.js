@@ -185,6 +185,37 @@ this.parentNode.classList.remove('erro');
 };
 
 
+
+
+function validaUf(elemento) {
+
+
+    elemento.addEventListener('focusout', function(evento) {
+    
+    evento.preventDefault()
+    
+    const ufValido = /^[a-z]-[a-z]?$/i;
+    
+    
+    if(this.value.match(ufValido)) {
+    
+        document.querySelector('.mensagem').innerHTML = "";
+    this.classList.remove('erro');
+    this.parentNode.classList.remove('erro');
+    
+    } else {
+        document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+        this.classList.add('erro');
+        this.parentNode.classList.add('erro')
+    
+        return false
+    }; 
+    
+    });
+    
+    };
+
+
 // queriesInput
 
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
@@ -211,6 +242,13 @@ for(let emFoco of camposNumericos) {
     for(let emFoco of camposEmail) {
 
         validaEmail(emFoco);
+        
+        }
+
+        
+    for(let emFoco of camposUf) {
+
+        validaUf(emFoco);
         
         }
 
