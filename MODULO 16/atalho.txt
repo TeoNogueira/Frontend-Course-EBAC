@@ -8,3 +8,11 @@ sm-12 === small <<<< para smartphone tbm. o doze significa a fração toda (linh
 
 <div class="col-md-4 col.sm-12"></div> <<< 4 em larguras media, e total em larguras menores(sm === small)
 
+
+
+<div class="modal fade"> >>> fade << class para dá um efeito de entrada no modal
+
+data-bs-dismiss << boostrap entende dentro da button que é pra fechar o modal
+
+
+     <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">ver produto</a> <<<<<< lendo o modal

@@ -10,21 +10,21 @@
 </head>
 <body>
     
-
 <header>
 <div class="container">
 
     <div class="row">
-        <div class="col">
+        <div class="col-md-6 col-sm-3">
 
-            <h1>Logo</h1>
+            <a href="https://github.com/TeoNogueira" target="_blank"><img src="./bootstrap/img/octacat.png" width="90" height="70" alt=""></a>
         </div>
+        <br><br><br><br>    
 
-        <div class="col">
+        <div class="lista_cont col-md-6 col-sm-9">
 
             <ul class="nav justify-content-end">
                 <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">About me</a></li>
                 <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
@@ -42,14 +42,17 @@
 
         <div class="row">
         <div class="col-md-7 col-sm-12">
-            <h2>Sobre nós</h2>
+            <h2>About me</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Hello my name is Teófilo Nogueira currently studying at EBAC through the front-end engineering course, I develop front-end web applications, I love technology and I have been looking for daily knowledge, I am willing to face any challenges as a developer.
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                🌲 I'm fixing my knowledge in: html, css, javascript and ReactJs. <br>
+🤗 Highlight: teamwork helps people to grow and makes us reach deeper into our goals.
+📚 My focus is on front-end development with languages and librarie ReactJs, bootstrap, material-design-iconic.
             </p>
-            <a class="btn btn-lg btn-success">Botão</a>
+            <a class="btn btn-lg btn-primary " href="https://github.com/TeoNogueira" target="_blank">Github</a>
+            
         </div>
         <div class="col-md-5 col-sm-12">
             <img src="./bootstrap/img/pexels_1.jpg" class="img-fluid" alt="">
@@ -65,54 +68,66 @@
     <div class="container">
         <div class="row">
             
-            <div class="col">
-                <h2>Produtos</h2>
-
+          
+                <br>
+                <h2>Development</h2>
+                <div class="col-md-4 col-sm-12">
                 <div class="card">
-                    <img class="btn btn-primary" src="./bootstrap/img/pexels_3.jpg" alt="" class="img-fluid">
+                    <img class="btn btn-primary" src="./bootstrap/img/dashboard.gif" alt="" class="img-fluid">
                     <div class="card-body">
 
                     <h5 class="card-title">LorenaIpsep</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                 <a href="#produto-1">ver produto</a>
+                 <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">ver produto</a>
                     </div>
 
                 </div>
+            </div>  <!-- col-1 -->
+           
+            <div class="col-md-4 col-sm-12">
                 <div class="card">
-                    <img class="btn btn-primary" src="./bootstrap/img/pexels_3.jpg" alt="" class="img-fluid">
+                    <img class="btn btn-primary" src="./bootstrap/img/nlwheatgif.gif" alt="" class="img-fluid">
                     <div class="card-body">
 
                     <h5 class="card-title">LorenaIpsep</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                 <a href="#produto-2">ver produto</a>
+                 <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">ver produto</a>
                     </div>
 
                 </div>
+            </div>  <!-- col-1 -->
+            <div class="col-md-4 col-sm-12">
                 <div class="card">
-                    <img class="btn btn-primary" src="./bootstrap/img/pexels_3.jpg" alt="" class="img-fluid">
+                    <img class="btn btn-primary" src="./bootstrap/img/dashboard.gif" alt="" class="img-fluid">
                     <div class="card-body">
 
                     <h5 class="card-title">LorenaIpsep</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                 <a href="#produto-3">ver produto</a>
+                 <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">ver produto</a>
                     </div>
 
                 </div>
-            </div>
+            </div>  <!-- col-1 -->
+            
         </div>
     </div>
 </section>
 <!-- CONTATO -->
-
+<br>
+<div class="bord_space"></div>
 <section id="contato">
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-sm-12">
+            <br>
+            
         <h2>Contato</h2>
         <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
         </div>
-        
+       
         <div class="col-md-6 col-sm-12">
+            
+            <br>    
             <form class="form">
                 <div class="input-group">
                     <input class="form-control" type="text" name="nome"  placeholder="digite seu nome">
@@ -124,6 +139,7 @@
                     <textarea class="form-control" rows="10"></textarea>
                 </div>
                 <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                <br><br><br><br>
             </form>
 
         </div>
@@ -132,7 +148,138 @@
 
 </section>
 
+<div class="modal fade" id="modal-1">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Produto 1</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
+        </div>
+        <div class="modal-body">
+            <h6>Confira o tamanho e os preços</h6>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>P</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>$300</td>
+                    </tr>
+
+                </tbody>
+        
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+<div class="modal fade" id="modal-2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Produto 1</h5>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            </div>
+            <div class="modal-body">
+                <h6>Confira o tamanho e os preços</h6>
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Tamanho</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <tr>
+                            <td>P</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td>$300</td>
+                        </tr>
+    
+                    </tbody>
+            
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    </div>
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 1</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td>XG</td>
+                                <td>$500</td>
+                            </tr>
+                            <tr>
+                                <td>XXG</td>
+                                <td>$1000</td>
+                            </tr>
+                            <tr>
+                                <td>XGG</td>
+                                <td>$3000</td>
+                            </tr>
+        
+                        </tbody>
+                
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        </div>  
 
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
