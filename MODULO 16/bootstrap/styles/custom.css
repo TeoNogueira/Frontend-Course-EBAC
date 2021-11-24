@@ -38,6 +38,11 @@ float: left;
 
 }
 
+header{
+
+    display: flex !important;
+    align-items: center !important;
+}
 
 .bord_space {
      opacity: 0.4;
