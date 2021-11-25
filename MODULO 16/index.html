@@ -10,7 +10,7 @@
 </head>
 <body>
     
-<header class="">
+<header class="" id="home">
     <nav class="fixed-top navbar-light bg-dark">
 <div class="container">
 
@@ -25,7 +25,7 @@
 
             <ul class="nav justify-content-end ">
                 <li class="nav-item"><a class="nav-link text-light" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-light" href="#sobre">About me</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#aboutme">About me</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#contato">Contact</a></li>
             </ul>
@@ -36,7 +36,7 @@
 </header>
 
 
-<section id="sobre">
+<section id="aboutme">
 
 
     <div class="container py-5 mt-5">
@@ -71,8 +71,8 @@
             
           
                 <br>
-                <h2>Development</h2>
-                <div class="col-md-4 col-sm-12">
+                <h2 id="projects">Development</h2>
+                <div class="col-md-4 col-sm-12" >
                 <div class="card">
                     <img class="btn btn-dark" src="./bootstrap/img/dashboard.gif" alt="" class="img-fluid">
                     <div class="card-body">
@@ -132,15 +132,16 @@
             <br>    
             <form class="form">
                 <div class="input-group">
-                    <input class="form-control" type="text" name="nome"  placeholder="digite seu nome">
+                    <input class="form-control" type="text" name="nome"  placeholder="Name">
                 </div>
                 <div class="input-group">
-                    <input class="form-control" type="text" name="email"  placeholder="digite seu email">
+                    <input class="form-control" type="text" name="email"  placeholder="Email">
                 </div>
                 <div class="input-group">
                     <textarea class="form-control" rows="10"></textarea>
                 </div>
-                <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                <button type="submit" class="btn btn-lg btn-success">
+                    Request quote</button>
                 <br><br><br><br>
             </form>
 
