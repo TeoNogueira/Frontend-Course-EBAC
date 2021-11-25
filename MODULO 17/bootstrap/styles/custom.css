@@ -1,0 +1,76 @@
+header {
+
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.flexdisplay {
+   float: left;
+}
+
+.section {
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+}
+
+
+section#sobre img {
+
+border-radius: 15px;
+
+} 
+
+.input, textarea {
+
+    margin-bottom: 1rem;
+}
+
+section#container
+
+
+.card {
+
+width: 32%;
+float: left;
+
+}
+
+header{
+
+    display: flex !important;
+    align-items: center !important;
+}
+
+.bord_space {
+     opacity: 0.4;
+    display: flex;
+    border: 1px solid rgb(207, 207, 197);
+    max-width: 1110px;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+
+/* MEDIAS */
+
+@media (max-width: 767px) {
+
+    section#sobre a {
+
+        margin-bottom: 12px;
+    
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+.container ul{
+    display: none;
+}
+
+}
