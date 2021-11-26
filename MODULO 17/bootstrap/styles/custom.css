@@ -80,8 +80,11 @@ header{
     margin-left: 7px !important;
   }
 
-
-  textarea {
-
-    user-select: none!important;
+  .mt-top {
+    margin-top: 50px !important;
   }
+
+.m-persona {
+
+    margin: 12px 0px !important;
+}

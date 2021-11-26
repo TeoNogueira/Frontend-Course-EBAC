@@ -1,285 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/styles/custom.css">
-    <title>Document</title>
+    <title>Cadastro</title>
 </head>
+
 <body>
+
+    <header class="" id="home">
+        <nav class="fixed-top navbar-light bg-dark">
+    <div class="container">
     
-<header class="" id="home">
-    <nav class="fixed-top navbar-light bg-dark">
-<div class="container">
-
-    <div class="row d-flex align-items-center">
-        <div class="col-md-6 col-sm-3">
-
-            <a href="https://github.com/TeoNogueira" target="_blank" class="nav-link text-light">TeoNogueira</a>
-        </div>
-        <br><br><br><br>    
-
-        <div class="lista_cont col-md-6 col-sm-9">
-
-            <ul class="nav justify-content-end ">
-                <li class="nav-item"><a class="nav-link text-light" href="./index.html#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-light" href="./index.html#aboutme">About me</a></li>
-                <li class="nav-item"><a class="nav-link text-light" href="./index.html#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link text-light" href="./index.html#register">Register</a></li>
-            </ul>
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 col-sm-3">
+    
+                <a href="https://github.com/TeoNogueira" target="_blank" class="nav-link text-light">TeoNogueira</a>
+            </div>
+            <br><br><br><br>    
+    
+            <div class="lista_cont col-md-6 col-sm-9">
+    
+                <ul class="nav justify-content-end ">
+                    <li class="nav-item"><a class="nav-link text-light" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./index.html#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-</nav>
-</header>
+    </nav>
+    </header>
 
-<!-- SECTION-02 -->
+    <section id="cadastro">
+        <div class="container">
 
+            <div class="row py-5 mt-top">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Register</h2>
+                    <p>
+                        Register to receive our products at your account.</p>
+                </div>
+            </div>
 
-<!-- register -->
-<br>
-<div class="bord_space"></div>
-<section id="register">
-<div class="container">
-    <div class="row py-5">
-        <div class="col-md-6 col-sm-12">
-        
-            
-        <h2>Register</h2>
-        <p>
-            Register to purchase free projects.
-        </p>
-        </div>
-       
-        <div class="col-md-12 col-sm-12">
-            
-            
             <form class="form">
 
-                <div class="form-row py-2">
+                <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome"  placeholder="Name">
+                            <input class="form-control" type="text" name="nome" placeholder="enter your name">
                         </div>
-
                     </div>
-                </div><!-- Final form-row -->
-                
-
-                <div class="form-row py-2">
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email"  placeholder="Email">
+                            <input class="form-control" type="text" name="email" placeholder="enter your email">
                         </div>
-
-                    </div>
-                </div>    <!-- Final form-row -->
-
-                <div class="row py-2">
-                    <div class="col">
-                        <label for="city">City</label>
-                        <input type="text" class="form-control" placeholder="Address" name="city" id="city">
                     </div>
                 </div>
 
-                <div class="row py-2">
+                <div class="row py-3">
                     <div class="col">
-                        <label for="country">Country</label>
-                        <select name="country" id="country">
-                            <option value="">Select Country</option>
-                            <option value="sp">SP</option>
-                            <option value="mg">MG</option>
-                            <option value="am">AM</option>
-                            
+                        <label for="endereco" class="col-form-label col-form-label-sm">Address</label>
+                        <input type="text" id="endereco" class="form-control" placeholder="Address">
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col">
+                        <label for="cidade" class="col-form-label col-form-label-sm">City</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="estado" class="col-form-label col-form-label-sm">Country</label>
+                        <select name="estado" id="estado" class="form-control">
+                            <option value="">Select your country</option>
+                            <option value="sp">SP</option>
+                            <option value="al">AL</option>
+                            <option value="mg">MG</option>
                         </select>
                     </div>
+                    <div class="col">
+                        <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
+                        <input type="text" name="cep" id="cep" class="form-control">
+                    </div>
                 </div>
-               
-               <!-- x -->
-
-               <div class="col">
-                <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
-                <input type="text" name="cep" id="cep" class="form-control">
-            </div>
-        </div>
 
 
-        <div class="row py-5 form">
-            <div class="col">INFO
-                <div class="input-group">
-                    <label for="info" class="col-form-label col-form-label-sm "></label>
-                    <textarea class="form-control ml-1" name="informacoes" id="info" rows="10"></textarea>
+                <div class="row py-5">
+                    <div class="col">
+                        Info
+                        <div class="input-group">
+                            <label for="info" class="col-form-label col-form-label-sm"></label>
+                            <textarea class="form-control " name="informacoes" id="info" rows="5"></textarea>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="form-check">
-                    <input type="checkbox" name="promocionais" id="promocionais">
-                    <label for="promocionais" class="form-check-label col-form-label-sm">I accept to receive promotional messages</label>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input type="checkbox" name="promocionais" id="promocionais">
+                            <label for="promocionais" class="form-check-label col-form-label-sm">I accept to receive promotional messages</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <button type="submit" class="btn btn-lg btn-success">Register now</button>
-
-        <p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1"></a>To receive
-            news.</p>
-
+                <button type="submit" class="btn btn-lg btn-success">Register now</button>
 
             </form>
 
-        </div>
-    </div>
-</div>
+            <p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">register now</a>to receive news</p>
 
-</section>
+        </div> <!-- end .container -->
+    </section>
 
-<div class="modal fade" id="modal-1">
-<div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title">Project 1</h5>
-            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-        </div>
-        <div class="modal-body">
-            <h6>DASHBOARD GLASS</h6>
-            <table class="table table-hover table-striped">
-                <thead>
-                    <tr>
-                        <th>Code</th>
-                        <th>By</th>
-                    </tr>
-                </thead>
-        
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>@TeoNogueira</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>@TeoNogueira</td>
-                    </tr>
 
-                </tbody>
-        
-            </table>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        
-    </div>
-</div>
 
-</div>
-<div class="modal fade" id="modal-2">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Project 2</h5>
-                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            </div>
-            <div class="modal-body">
-                <h6>NLW HEAT 2021</h6>
-                <table class="table table-hover table-striped">
-                    <thead>
-                        <tr>
-                            <th>Code</th>
-                            <th>By</th>
-                        </tr>
-                    </thead>
-            
-                    <tbody>
-                        <tr>
-                            <td>Axios</td>
-                            <td>@TeoNogueira</td>
-                        </tr>
-                        <tr>
-                            <td>ReactJs</td>
-                            <td>@TeoNogueira</td>
-                        </tr>
-                        <tr>
-                            <td>Sass</td>
-                            <td>@TeoNogueira</td>
-                        </tr>
-                        <tr>
-                            <td>Node</td>
-                            <td>@TeoNogueira</td>
-                        </tr>
-                        <tr>
-                            <td>Insomnia</td>
-                            <td>@TeoNogueira</td>
-                        </tr>
-    
-                    </tbody>
-            
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-            
-        </div>
-    </div>
-    
-    </div>
-    <div class="modal fade" id="modal-3">
+    <div class="modal fade" id="modal-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Project 3</h5>
-                    <button class="btn-close" data-bs-dismiss="modal-3" aria-label="Close"></button>
-        
+                    <h5 class="modal-title">subscribe me to the list</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>NLW 03</h6>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Code</th>
-                                <th>By</th>
-                            </tr>
-                        </thead>
-                
-                        <tbody>
-                            <tr>
-                                <td>HTML</td>
-                                <td>@TeoNogueira</td>
-                            </tr>
-                            <tr>
-                                <td>CSS</td>
-                                <td>@TeoNogueira</td>
-                            </tr>
-                            <tr>
-                                <td>ReactJs</td>
-                                <td>@TeoNogueira</td>
-                            </tr>
-                            <tr>
-                                <td>NextJs</td>
-                                <td>@TeoNogueira</td>
-                            </tr>
-                        </tbody>
-                
-                    </table>
+                    <h6>
+                        Fill in the fields to receive news and promotions</h6>
+
+                    <form class="form-inline">
+                        <div class="row">
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="nome"
+                                    placeholder="name" required>
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="e-mail"
+                                    placeholder="e-mail" required>
+                            </div>
+                            <div class="form-group col-4">
+                                <button type="submit" class="btn btn-sm btn-success">Receive news</button>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary mb-2" data-bs-dismiss="modal">Close</button>
                 </div>
-                
             </div>
         </div>
-        
-        </div>  
 
+    </div>
 
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
