@@ -54,6 +54,21 @@ header{
 }
 
 
+
+/* accordion */
+
+/* 
+.accordion { 
+
+max-width: 1000px;
+height: 900px;
+
+
+}
+ */
+
+
+
 /* MEDIAS */
 
 @media (max-width: 767px) {
