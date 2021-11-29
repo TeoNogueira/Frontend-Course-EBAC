@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/styles/custom.css">
     <link rel="stylesheet" href="./bootstrap/styles/custom-form.css">
-    <title>Document</title>
+    <title>Fan Page Mobile Legends</title>
 </head>
 <body>
     
@@ -18,7 +18,7 @@
     <div class="row d-flex align-items-center">
         <div class="col-md-6 col-sm-3">
 
-            <a href="https://github.com/TeoNogueira" target="_blank" class="nav-link text-light">TeoNogueira</a>
+            <a  target="_blank" class="nav-link text-light user-select-none">Mobile Legends</a>
         </div>
         <br><br><br><br>    
 
@@ -53,15 +53,78 @@
 🤗 Highlight: teamwork helps people to grow and makes us reach deeper into our goals.
 📚 My focus is on front-end development with languages and librarie ReactJs, bootstrap, material-design-iconic.
             </p>
-            <a class="btn btn-lg btn-primary " href="https://github.com/TeoNogueira" target="_blank">Github</a>
+            <a class="btn btn-lg btn-secondary " href="https://m.mobilelegends.com/en" target="_blank" id="buttonhome">Official Website</a>
+            
             
         </div>
-        <div class="col-md-5 col-sm-12">
+        <div class="col-md-5 col-sm-12 border-radius-4">
             <img src="./bootstrap/img/pexels_1.jpg" class="img-fluid" alt="">
         </div>
     </div>
 </div>
 </section>
+<!-- carousel -->
+
+
+<div class="container"> 
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        
+        <div class="carousel-inner">
+           
+            <div class="carousel-item">
+                
+                <div class="ratio ratio-16x9"> 
+                    
+                <img src="./bootstrap/img/alu.jpg" class="d-block w-100 img-fluid" alt="...">
+                
+            </div>
+            </div>
+           
+            <div class="carousel-item active">
+                <div class="ratio ratio-16x9"> 
+                <img src="./bootstrap/img/meya.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-16x9"> 
+                <img src="./bootstrap/img/valentine.jpg" class="d-block w-100 img-fluid" alt="...">
+               
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="ratio ratio-16x9"> 
+                <img src="./bootstrap/img/selena.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+    </div><!-- carrousel end -->
+    
+</div> <!-- container -->
+
+
+
+
+
+
+
+
 
 <!-- SECTION-02 -->
 
@@ -294,5 +357,30 @@
 
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script>
+
+const scriptChangeClass = () => {
+
+function changeClass(element, old, nova) {
+
+   element.classList.remove(old);
+   element.classList.add(nova) 
+
+}
+
+
+setTimeout(function() {
+
+let buttonhome = document.getElementById('buttonhome');
+
+changeClass(buttonhome, 'btn-secondary', 'btn-success');
+
+
+}, 7000);
+
+}
+
+scriptChangeClass()
+    </script>
 </body>
 </html>
