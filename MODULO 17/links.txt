@@ -3,3 +3,22 @@
 
 
  lembrando que o jquery (linkLocal ou cdn) vem antes dos links (local ou cdn) js do bootstrap.
+
+ carrousel :
+
+
+HELPERS >>>>> exemple >> class ratio ratio-21x9 ou ratio-16x9 etc..<<<
+
+               class="clearfix" << para quebrar linha
+               <div class="clearfix"></div>
+
+               float-start float-end << alinhamentos
+
+colocar underline no link é só digitar: btn-link
+
+positions: fixed-top
+
+
+LINKS: stretched-link seleciona uma area completa totalmente clicável
+
+TEXT: cortar um texto >>>>>> <div class="text-truncate col-3"></div> 
