@@ -79,14 +79,41 @@ height: 900px;
     
     }
 
+
+header {
+    position: relative ;
+    z-index: 5;
+    opacity: 0.6;
+    
+}
+
+
+#buttonhome {
+
+    margin-bottom: 12px;
+}
+
+
 }
 
 
 @media (max-width: 991px) {
 
-.container ul{
-    display: none;
-}
+    header {
+        position: relative ;
+        z-index: 5;
+        opacity: 0.6;
+      
+        
+    }
+
+    #listHeader {
+        display: none !important;
+    }
+ #nameInitial {
+    display: none !important;
+    
+ }
 
 }
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/styles/custom.css">
     <link rel="stylesheet" href="./bootstrap/styles/custom-form.css">
+
     <title>Fan Page Mobile Legends</title>
 </head>
 <body>
@@ -18,16 +19,16 @@
     <div class="row d-flex align-items-center">
         <div class="col-md-6 col-sm-3">
 
-            <a  target="_blank" class="nav-link text-light user-select-none">Mobile Legends</a>
+            <a  target="_blank" class="nav-link text-light user-select-none" id="nameInitial">Mobile Legends</a>
         </div>
         <br><br><br><br>    
 
-        <div class="lista_cont col-md-6 col-sm-9">
+        <div class="lista_cont col-md-6 col-sm-9" id="listHeader">
 
             <ul class="nav justify-content-end ">
                 <li class="nav-item"><a class="nav-link text-light" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#aboutme">About me</a></li>
-                <li class="nav-item"><a class="nav-link text-light" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#buy">buy</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="#contato">Contact</a></li>
             </ul>
         </div>
@@ -42,23 +43,23 @@
 
     <div class="container py-5 mt-5">
 
-        <div class="row">
+        <div class="row align-items-center">
         <div class="col-md-7 col-sm-12">
-            <h2>Who i am?</h2>
+            <h2>Bang Bang</h2>
             <p>
-                Hello my name is Teófilo Nogueira currently studying at EBAC through the front-end engineering course, I develop front-end web applications, I love technology and I have been looking for daily knowledge, I am willing to face any challenges as a developer.
+                Junte-se ao seus amigos no Mobile Legends: Bang Bang, o mais novo MOBA 5v5, e lute contra jogadores reais! Escolha seus heróis favoritos e monte o time perfeito com seus irmãos de armas! Encontre partidas em 10 segundos e jogue durante 10 minutos. Passe pelas rotas, pela selva, avance e participe das lutas em equipe. Toda a diversão de um MOBA de PC e jogos de ação na palma de suas mãos! Alimente seu espírito de eSports!
             </p>
             <p>
-                🌲 I'm fixing my knowledge in: html, css, javascript and ReactJs. <br>
-🤗 Highlight: teamwork helps people to grow and makes us reach deeper into our goals.
-📚 My focus is on front-end development with languages and librarie ReactJs, bootstrap, material-design-iconic.
+                Mobile Legends: Bang Bang, o fascinante MOBA para dispositivos móveis. Esmague e vença seus inimigos e alcance a vitória final com seus companheiros de equipe!
+
+Seu Pc anseia pela batalha!
             </p>
-            <a class="btn btn-lg btn-secondary " href="https://m.mobilelegends.com/en" target="_blank" id="buttonhome">Official Website</a>
+            <a class="transition-4 btn btn-lg btn-secondary" href="https://m.mobilelegends.com/en" target="_blank" id="buttonhome">Official Website</a>
             
             
         </div>
         <div class="col-md-5 col-sm-12 border-radius-4">
-            <img src="./bootstrap/img/pexels_1.jpg" class="img-fluid" alt="">
+            <img src="./bootstrap/img/pexels_1.jpg" class="img-fluid rounded animated zoomIn" alt="">
         </div>
     </div>
 </div>
@@ -75,7 +76,7 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         
-        <div class="carousel-inner">
+        <div class="carousel-inner rounded">
            
             <div class="carousel-item">
                 
@@ -135,7 +136,7 @@
             
           
                 <br>
-                <h2 id="projects">Development</h2>
+                <h2 id="buy">Skins</h2>
                 <div class="col-md-4 col-sm-12" >
                 <div class="card">
                     <img class="btn btn-dark" src="./bootstrap/img/dashboard.gif" alt="" class="img-fluid">
@@ -355,32 +356,18 @@
         
         </div>  
 
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+    
+        <script src="./bootstrap/js/alternative.js"></script>
+     
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
-    <script>
-
-const scriptChangeClass = () => {
-
-function changeClass(element, old, nova) {
-
-   element.classList.remove(old);
-   element.classList.add(nova) 
-
-}
+    <script src="./bootstrap/js/others.js">
 
 
-setTimeout(function() {
 
-let buttonhome = document.getElementById('buttonhome');
+    </script> 
 
-changeClass(buttonhome, 'btn-secondary', 'btn-success');
-
-
-}, 7000);
-
-}
-
-scriptChangeClass()
     </script>
 </body>
 </html>
