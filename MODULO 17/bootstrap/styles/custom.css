@@ -5,6 +5,15 @@ header {
     align-items: center;
 }
 
+.efTransition {
+
+   transition: 1.2s;
+}
+
+.normal {
+
+}
+
 .flexdisplay {
    float: left;
 }
@@ -53,7 +62,12 @@ header{
     margin: 10px auto;
 }
 
+.spaceTopBottom {
 
+    margin: 10px 0 14px;
+
+
+}
 
 /* accordion */
 
@@ -98,6 +112,13 @@ header {
 
 
 @media (max-width: 991px) {
+
+    .spaceTopBottom {
+
+        margin: 10px 0 14px;
+
+
+    }
 
     header {
         position: relative ;

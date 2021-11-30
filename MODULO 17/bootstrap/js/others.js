@@ -13,13 +13,35 @@ const scriptChangeClass = () => {
     
     changeClass(buttonhome, 'btn-secondary', 'btn-dark');
     
+  
     
-    }, 7000);
+    }, 3000);
     
     }
     
     scriptChangeClass()
 
+
+  const scriptHeader = () => {
+
+    function changeColorHeader(element, nova, nova2) {
+
+      element.classList.add(nova)
+      element.classList.add(nova2)
+
+
+
+    }
+
+    setTimeout(function() {
+
+      let effectTransparent = document.getElementById('nav');
+      changeColorHeader(effectTransparent, 'opacity-50', 'efTransition');
+
+    }, 5000)
+
+  }
+  scriptHeader()
 
 
 
