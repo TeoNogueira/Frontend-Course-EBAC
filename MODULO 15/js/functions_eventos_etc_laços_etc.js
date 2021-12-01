@@ -1,3 +1,4 @@
+
 function calcMedia( notas) {
   
     let soma = 0
@@ -93,7 +94,7 @@ document.getElementById('resultado').innerHTML = texto;
 })
 
 
-function validaCampo(elemento) {
+ function validaCampo(elemento) {
 
 elemento.addEventListener('focusout', function(event) {
 
@@ -120,8 +121,7 @@ return false;
 
 };
 
-
-function validaCampoNumerico(elemento) {
+ function validaCampoNumerico(elemento) {
 
     elemento.addEventListener('focusout', function(event) {
 
@@ -187,7 +187,7 @@ this.parentNode.classList.remove('erro');
 
 
 
-function validaUf(elemento) {
+ function validaUf(elemento) {
 
 
     elemento.addEventListener('focusout', function(evento) {
@@ -251,4 +251,72 @@ for(let emFoco of camposNumericos) {
         validaUf(emFoco);
         
         }
+
+
+        // 
+        // verificar se o nome está vazio
+
+
+        
+       function validar() {
+
+  let nome = document.getElementById("nome");
+  let email = document.getElementById("email");
+  let telefone = document.getElementById("telefone");
+  let cep = document.getElementById("cep");
+  let cidade = document.getElementById("cidade");
+  let uf = document.getElementById("uf");
+
+
+
+ if (nome.value == "") {
+    alert("Nome não informado");
+
+    // Deixa o input com o focus
+    nome.focus();
+    // retorna a função e não olha as outras linhas
+    return;
+  }
+
+  if (email.value == "") {
+    alert("E-mail não informado");
+    email.focus();
+    return;
+  }
+
+
+  if (telefone.value == "") {
+    alert("Telefone não informado");
+    telefone.focus();
+    return;
+  }
+
+  if (cep.value == "") {
+    alert("CEP não informado");
+    cep.focus();
+    return;
+  }
+ 
+
+  if (cidade.value == "") {
+    alert("Senha não informada");
+    cidade.focus();
+    return;
+  }
+
+
+  if (uf.value == "") {
+    alert("Sobrenome não informado");
+    uf.focus();
+    return;
+  }
+ 
+  
+ 
+ 
+  alert("Formulário enviado!");
+
+} 
+
+  
 
