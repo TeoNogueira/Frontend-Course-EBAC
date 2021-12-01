@@ -44,7 +44,47 @@ const scriptChangeClass = () => {
   scriptHeader()
 
 
+  // POPUP
 
+  const popup = () => {
+
+    function addPop(element, nova) {
+
+      element.classList.add(nova)
+     
+
+
+
+    }
+
+    setTimeout(function() {
+
+      let popUp = document.getElementById('popUp');
+      addPop(popUp, 'popUp');
+
+    }, 1990)
+
+  }
+  popup()
+
+
+
+// REMOVE POP
+
+const removePop = () => {
+
+document.getElementById('popUp').remove('popUp')
+
+
+}
+
+
+
+
+
+
+
+// CARROSSEL 
     
 const myCarousel = document.querySelector('#carouselExampleIndicators') //initial id carousel
 const carousel = new bootstrap.Carousel(myCarousel, {
