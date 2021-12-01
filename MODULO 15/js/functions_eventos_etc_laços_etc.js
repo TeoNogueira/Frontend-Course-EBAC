@@ -259,7 +259,9 @@ for(let emFoco of camposNumericos) {
 
 
         
-       function validar() {
+
+        
+        function validar() {
 
   let nome = document.getElementById("nome");
   let email = document.getElementById("email");
@@ -268,7 +270,6 @@ for(let emFoco of camposNumericos) {
   let cidade = document.getElementById("cidade");
   let uf = document.getElementById("uf");
   
-
 
  if (nome.value == "") {
     alert("Nome não informado");
