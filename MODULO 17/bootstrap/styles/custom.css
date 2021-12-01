@@ -25,7 +25,18 @@ header {
     
 }
 
+/*  */
+.btn-purple {
 
+    background-color: #2b266b;
+    color: #fff
+}
+.btn-purple:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+/*  */
 section#sobre img {
 
 border-radius: 15px;
@@ -69,6 +80,25 @@ header{
 
 }
 
+
+/* cards */
+
+.cardrefe {
+
+text-decoration: none;
+color: rgb(26, 26, 37)
+
+}
+
+.cardrefe:hover {
+
+    color: rgb(32, 37, 37);
+    opacity: 0.9;
+
+}
+
+
+
 /* accordion */
 
 /* 
@@ -106,6 +136,9 @@ header {
 
     margin-bottom: 12px;
 }
+
+
+
 
 
 }
