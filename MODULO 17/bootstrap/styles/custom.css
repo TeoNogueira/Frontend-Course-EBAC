@@ -58,16 +58,16 @@ border-radius: 15px;
 .popUp {
     top: 20%;
     left: 40%;
-    opacity: 0.8;
+    
     z-index: 19;
     display: block;
     clear: both;
     position: fixed;
     flex-direction: center;
-    transition: 0.6s;
+    transition: 5.2s;
     width: 250px;
     height: 250px;
-    background: #16c24a;
+    background: #545e57;
     
     }
 
@@ -79,6 +79,7 @@ border-radius: 15px;
         align-items: center;
     }
   .popPara {
+      user-select: none;
       padding-top: 30px;
       width: 100%;
         text-align: center;
@@ -103,7 +104,7 @@ border-radius: 15px;
  .greenStart:hover {
 
     color: #fff;
-    background: #378b34;
+    background: #16c24a;
  }
 
 

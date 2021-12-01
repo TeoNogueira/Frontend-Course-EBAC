@@ -50,10 +50,7 @@ const scriptChangeClass = () => {
 
     function addPop(element, nova) {
 
-      element.classList.add(nova)
-     
-
-
+      element.classList.add(nova)    
 
     }
 
@@ -77,10 +74,6 @@ document.getElementById('popUp').remove('popUp')
 
 
 }
-
-
-
-
 
 
 
