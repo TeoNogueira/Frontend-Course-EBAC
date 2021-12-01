@@ -226,6 +226,7 @@ let camposEmail = document.querySelectorAll('input.email')
 
 let camposUf = document.querySelectorAll('input.uf');
 
+
 for(let emFoco of camposObrigatorios) {
 
 validaCampo(emFoco);
@@ -266,7 +267,7 @@ for(let emFoco of camposNumericos) {
   let cep = document.getElementById("cep");
   let cidade = document.getElementById("cidade");
   let uf = document.getElementById("uf");
-
+  
 
 
  if (nome.value == "") {
@@ -299,14 +300,14 @@ for(let emFoco of camposNumericos) {
  
 
   if (cidade.value == "") {
-    alert("Senha não informada");
+    alert("Cidade não informada");
     cidade.focus();
     return;
   }
 
 
   if (uf.value == "") {
-    alert("Sobrenome não informado");
+    alert("Estado não informado");
     uf.focus();
     return;
   }
