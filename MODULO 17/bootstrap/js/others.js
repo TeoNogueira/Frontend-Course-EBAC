@@ -72,7 +72,6 @@ const removePop = () => {
 
 document.getElementById('popUp').remove('popUp')
 
-
 }
 
 
@@ -81,6 +80,6 @@ document.getElementById('popUp').remove('popUp')
     
 const myCarousel = document.querySelector('#carouselExampleIndicators') //initial id carousel
 const carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 7200,
+  interval: 5200,
   wrap: true // true para voltar ao inicio e executar novamente
 })
