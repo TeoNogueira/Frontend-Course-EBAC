@@ -95,12 +95,12 @@
                 <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite o seu nome">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite o seu nome" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite o seu email">
+                            <input class="form-control" type="text" name="email" placeholder="Digite o seu email" required>
                         </div>
                     </div>
                 </div>
@@ -108,14 +108,14 @@
                 <div class="row py-3">
                     <div class="col">
                         <label for="endereco" class="col-form-label col-form-label-sm">Endereço</label>
-                        <input type="text" id="endereco" class="form-control" placeholder="Address">
+                        <input type="text" id="endereco" class="form-control" placeholder="Endereço" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
                         <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
-                        <input type="text" name="cidade" id="cidade" class="form-control">
+                        <input type="text" name="cidade" id="cidade" class="form-control" required>
                     </div>
                     <div class="col">
                         <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="col">
                         <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
-                        <input type="text" name="cep" id="cep" class="form-control">
+                        <input type="text" name="cep" id="cep" class="form-control" required>
                     </div>
                 </div> 
                 <!-- final cidade, estado, cep end-->
@@ -137,12 +137,12 @@
                 <div class="row">
                     <div class="col">
                         <label for="bairro" class="col-form-label col-form-label-sm">Bairro</label>
-                        <input type="text" name="bairro" id="bairro" class="form-control">
+                        <input type="text" name="bairro" id="bairro" class="form-control" required>
                     </div>
                     <div class="col">
                         <label for="complemento" class="col-form-label col-form-label-sm">Complemento</label>
                         <select name="complemento" id="estado" class="form-control">
-                            <option value="">...</option>
+                            <option value="">Selecione o seu Complemento</option>
                             <option value="a">A</option>
                             <option value="b">B</option>
                             <option value="c">D</option>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="col">
                         <label for="telefone" class="col-form-label col-form-label-sm">Telefone</label>
-                        <input type="text" name="telefone" id="telefone" class="form-control">
+                        <input type="text" name="telefone" id="telefone" class="form-control" required>
                     </div>
                 </div> 
 
@@ -168,7 +168,7 @@
                         Info
                         <div class="input-group">
                             <label for="info" class="col-form-label col-form-label-sm"></label>
-                            <textarea class="form-control " name="informacoes" id="info" rows="5"></textarea>
+                            <textarea class="form-control " name="informacoes" id="info" rows="5" required></textarea>
                         </div>
                     </div>
                 </div>
