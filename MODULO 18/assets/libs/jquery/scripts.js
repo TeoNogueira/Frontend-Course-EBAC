@@ -1,7 +1,7 @@
 
 // instacia jQuery e evita conflitos;
 
-$(document).ready( function($){
+$(document).ready(function($){
 
     $('.owl-carousel').owlCarousel();
 
