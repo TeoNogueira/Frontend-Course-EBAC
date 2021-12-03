@@ -16,5 +16,14 @@ $(document).ready(function($){
 
 $('h4').text('Bem-vindo a loja')
 
+// hide
+// show()
 //fadeIn(2000) transiçao/entrada
 //fadeOut()     ''/saida
+
+// $('.featured-item a').css('color', '#fafafa')
+/* $('.featured-item a').css({
+'color': '#fff',
+'background': '#bbbbaa',
+instancia por objeto
+})*/
