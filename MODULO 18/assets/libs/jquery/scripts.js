@@ -1,13 +1,16 @@
 
 // instacia jQuery e evita conflitos;
 
-jQuery( function($){
+$(document).ready( function($){
+
+    $('.owl-carousel').owlCarousel();
 
     $('h4') // selecionar tag
     $('.style') // '' '' class
+    $('#style') // '' '' id
 
-    
+    console.log(titulos.first())
 })
 
 
-console.log($('h4').text('olá criançada'))
+$('h4').text('Bem-vindo a loja')
