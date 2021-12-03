@@ -1,5 +1,5 @@
 
-// instacia jQuery e evita conflitos;
+// instancia jQuery e evita conflitos;
 
 $(document).ready(function($){
 
@@ -8,9 +8,13 @@ $(document).ready(function($){
     let titulos = $('h4') // selecionar tag
     let itens = $('.featured-item') // '' '' class
     let destaques = $('#featured') // '' '' id
-
     console.log(titulos.first())
+
+    $('.featured-item a').addClass('btn btn-dark stretch-link')
 })
 
 
 $('h4').text('Bem-vindo a loja')
+
+//fadeIn(2000) transiçao/entrada
+//fadeOut()     ''/saida
