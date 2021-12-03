@@ -261,8 +261,8 @@ for(let emFoco of camposNumericos) {
         
 
         
-        function validar() {
-
+        function validar(event) {
+            
   let nome = document.getElementById("nome");
   let email = document.getElementById("email");
   let telefone = document.getElementById("telefone");
@@ -270,6 +270,7 @@ for(let emFoco of camposNumericos) {
   let cidade = document.getElementById("cidade");
   let uf = document.getElementById("uf");
   
+
 
  if (nome.value == "") {
     alert("Nome não informado");
@@ -312,11 +313,26 @@ for(let emFoco of camposNumericos) {
     uf.focus();
     return;
   }
+
+
+const formular = document.getElementById('formular')
+
+formular.addEventListener('submit', function(event) {
+
+event.preventDefault()
+
+
+setTimeout(function() {
+    document.location.reload(true)
+},3000)
+
+})
+
+
+    document.getElementById('resultado').innerHTML = 'Formulário Enviado com Sucesso!';
+
  
-  
- 
- 
-  alert("Formulário enviado!");
+
 
 } 
 
