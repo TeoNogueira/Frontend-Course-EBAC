@@ -5,9 +5,9 @@ $(document).ready( function($){
 
     $('.owl-carousel').owlCarousel();
 
-    $('h4') // selecionar tag
-    $('.style') // '' '' class
-    $('#style') // '' '' id
+    let titulos = $('h4') // selecionar tag
+    let itens = $('.featured-item') // '' '' class
+    let destaques = $('#featured') // '' '' id
 
     console.log(titulos.first())
 })
