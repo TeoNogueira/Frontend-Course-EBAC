@@ -10,7 +10,20 @@ $(document).ready(function($){
     let destaques = $('#featured') // '' '' id
     console.log(titulos.first())
 
-    $('.featured-item a').addClass('btn btn-dark stretch-link')
+//  let line = $('.line-dec')
+//     $('.featured-item a').addClass('btn btn-dark stretch-link');
+//     $('.section-heading h1').addClass('active-h1');
+       $('.featured-item:first a').click(function(){
+
+        $(this).css({
+
+            'color': '#ff0',
+            // 'background': '#ff0',
+            'font-weight': '100',
+        })
+
+       }) 
+
 })
 
 
