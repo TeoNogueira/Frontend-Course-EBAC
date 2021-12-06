@@ -8,12 +8,12 @@ $(document).ready(function($){
     let titulos = $('h4') // selecionar tag
     let itens = $('.featured-item') // '' '' class
     let destaques = $('#featured') // '' '' id
-    console.log(titulos.first())
+    // console.log(titulos.first())
 
 //  let line = $('.line-dec')
-//     $('.featured-item a').addClass('btn btn-dark stretch-link');
+    $('.featured-item a').addClass('btn btn-dark stretch-link');
 //     $('.section-heading h1').addClass('active-h1');
-       $('.featured-item:first a').click(function(){
+       $('.featured-item a').click(function(){
 
         $(this).css({
 
@@ -28,6 +28,20 @@ $(document).ready(function($){
 
 
 $('h4').text('Bem-vindo a loja')
+
+
+//manipulação de evento
+
+
+$('.featured-item a').on('click', function(event) {
+
+    event.preventDefault();
+
+    alert('Produto esgotado');
+});
+
+
+
 
 // hide
 // show()
