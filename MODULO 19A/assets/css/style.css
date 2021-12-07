@@ -738,3 +738,63 @@ a {
 	} 
 
 }
+
+
+
+/* others */
+
+#email {
+
+	position: relative;
+}
+:root {
+	
+	--clr-bg: #4292ed;
+	--clr-bg-2: #153c69;
+	--clr-bg-3: #8ad3d3;
+}
+
+.bg-customize {
+
+	height: 10em;
+	width: 100%;
+	background: var(--clr-bg-2);
+
+}
+
+@media(max-width: 600px) {
+	.bg-customize {
+	
+	height: 14em;
+	width: 100%;
+	background: var(--clr-bg-3) !important;
+}
+.row {
+	margin-top: 38px;
+}
+
+p {
+	display: none;
+}
+
+.modify-media input{
+
+	margin: 15px;
+}
+
+}
+
+@media(max-width: 767px) {
+	.bg-customize {
+
+		height: 12em;
+		width: 100%;
+		background: var(--clr-bg);
+	}
+
+	.modify-media input{
+		
+		margin: 5px;
+	}
+
+}

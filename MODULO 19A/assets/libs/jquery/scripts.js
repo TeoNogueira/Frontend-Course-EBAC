@@ -62,15 +62,58 @@ instancia por objeto
 Entendendo ações que começam ao termino de outro
 */
 
-$('.featured-item:nth(0)').hide(2000, function() {
+// $('.featured-item:nth(0)').hide(2000, function() {
 
-//callback
+// //callback
 
-console.log($(this).find('h4').text() + ' esgotado') 
+// console.log($(this).find('h4').text() + ' esgotado') 
+// })
+// .show(2000, function() {
+
+//     console.log($(this).find('h4').text() + ' Em estoque!') 
+
+// })
+
+
+
+const duracao = 2000
+
+
+// ANIMAÇÕES
+
+$('.featured-item:nth(1)')
+.hide(duracao)
+.show(duracao)
+.fadeOut(duracao)
+.fadeIn(duracao)
+// .toggle(duracao)
+// .toggle(duracao)
+
+
+
+
+$('#form-submit').on('click', function(evt) {
+
+
+    evt.preventDefault();
+
+    if($('#email').val() != '')
+    {
+
+        $('#email').animate({
+            transition: '0.5s',
+            opacity: '0',
+         
+            // opacity: 'toggle',
+            
+          
+
+        })
+
+    }
+
+
 })
-.show(2000, function() {
 
-    console.log($(this).find('h4').text() + ' Em estoque!') 
 
-})
-})
+});
