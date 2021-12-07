@@ -3,7 +3,7 @@
 
 $(document).ready(function($){
 
-    $('.owl-carousel').owlCarousel();
+    $('.owl-carousel').owlCarousel() ;
 
     let titulos = $('h4') // selecionar tag
     let itens = $('.featured-item') // '' '' class
@@ -12,7 +12,7 @@ $(document).ready(function($){
 
 //  let line = $('.line-dec')
     $('.featured-item a').addClass('btn btn-dark stretch-link');
-//     $('.section-heading h1').addClass('active-h1');
+    $('.section-heading h1').addClass('active-h1');
        $('.featured-item a').click(function(){
 
         $(this).css({
@@ -27,69 +27,23 @@ $(document).ready(function($){
 
 
 
-// $('h4').text('Bem-vindo a loja')
 
 
-//manipulação de evento
+// const duracao = 2000
 
 
-// $('.featured-item: ').on('click', function(event) {
+// // ANIMAÇÕES
 
-//     event.preventDefault();
-
-//     alert('Produto esgotado');
-// });
-
-
-
-
-// hide
-// show()
-//fadeIn(2000) transiçao/entrada
-//fadeOut()     ''/saida
-
-// $('.featured-item a').css('color', '#fafafa')
-/* $('.featured-item a').css({
-'color': '#fff',
-'background': '#bbbbaa',
-instancia por objeto
-})*/
-
-
-
-// CALLBACKS:
-/*
-Entendendo ações que começam ao termino de outro
-*/
-
-// $('.featured-item:nth(0)').hide(2000, function() {
-
-// //callback
-
-// console.log($(this).find('h4').text() + ' esgotado') 
-// })
-// .show(2000, function() {
-
-//     console.log($(this).find('h4').text() + ' Em estoque!') 
-
-// })
-
-
-
-const duracao = 2000
-
-
-// ANIMAÇÕES
-
-$('.featured-item:nth(1)')
-.hide(duracao)
-.show(duracao)
-.fadeOut(duracao)
-.fadeIn(duracao)
+// $('.featured-item:nth(1)')
+// .hide(duracao)
+// .show(duracao)
+// .fadeOut(duracao)
+// .fadeIn(duracao)
 // .toggle(duracao)
 // .toggle(duracao)
 
 
+});
 
 
 $('#form-submit').on('click', function(evt) {
@@ -99,13 +53,12 @@ $('#form-submit').on('click', function(evt) {
 
     if($('#email').val() != '')
     {
-
+        evt.preventDefault();
         $('#email').animate({
             transition: '0.5s',
-            opacity: '0',
+            opacity: '0.5',
          
-            // opacity: 'toggle',
-            
+            // opacity: 'toggle'           
           
 
         })
@@ -114,6 +67,3 @@ $('#form-submit').on('click', function(evt) {
 
 
 })
-
-
-});

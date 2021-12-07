@@ -743,6 +743,7 @@ a {
 
 /* others */
 
+
 #email {
 
 	position: relative;
@@ -760,7 +761,25 @@ a {
 	width: 100%;
 	background: var(--clr-bg-2);
 
+} 
+
+
+
+/* MEDIAS  */
+
+@media(max-width: 536px) {
+
+	.divine {
+		
+	}
+
+	.paragraph {
+		padding-top: 12px !important;
+	}
+
+
 }
+
 
 @media(max-width: 600px) {
 	.bg-customize {
@@ -769,19 +788,27 @@ a {
 	width: 100%;
 	background: var(--clr-bg-3) !important;
 }
-.row {
+.row-custom {
 	margin-top: 38px;
 }
 
 p {
 	display: none;
-}
-
+} 
 .modify-media input{
 
 	margin: 15px;
 }
 
+
+.paragraph {
+
+	display: block !important;
+}
+
+.paragraph_none {
+	display: none !important;
+}
 }
 
 @media(max-width: 767px) {

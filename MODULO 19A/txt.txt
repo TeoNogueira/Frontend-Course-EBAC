@@ -1,0 +1,47 @@
+
+// $('h4').text('Bem-vindo a loja')
+
+
+//manipulação de evento
+
+
+// $('.featured-item: ').on('click', function(event) {
+
+//     event.preventDefault();
+
+//     alert('Produto esgotado');
+// });
+
+
+
+
+// hide
+// show()
+//fadeIn(2000) transiçao/entrada
+//fadeOut()     ''/saida
+
+// $('.featured-item a').css('color', '#fafafa')
+/* $('.featured-item a').css({
+'color': '#fff',
+'background': '#bbbbaa',
+instancia por objeto
+})*/
+
+
+
+// CALLBACKS:
+/*
+Entendendo ações que começam ao termino de outro
+*/
+
+// $('.featured-item:nth(0)').hide(2000, function() {
+
+// //callback
+
+// console.log($(this).find('h4').text() + ' esgotado') 
+// })
+// .show(2000, function() {
+
+//     console.log($(this).find('h4').text() + ' Em estoque!') 
+
+// })
