@@ -91,7 +91,7 @@ $('#form-submit').on('click', function(evt) {
 
     // about
 
-    $('.nav-modal-open').on('click', function(e) {
+    $('.nav-modal-open-about').on('click', function(e) {
 
         e.preventDefault();
 
@@ -101,7 +101,7 @@ $('#form-submit').on('click', function(evt) {
 
         $('.modal-header h5.modal-title ').html($(this).text)
 
-        let myModal = new bootstrap.Modal($('#modelId'))
+        let myModal = new bootstrap.Modal($('#modelIdTwo'))
 
             myModal.show()
         
