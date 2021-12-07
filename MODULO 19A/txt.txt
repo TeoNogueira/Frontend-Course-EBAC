@@ -45,3 +45,17 @@ Entendendo ações que começam ao termino de outro
 //     console.log($(this).find('h4').text() + ' Em estoque!') 
 
 // })
+
+
+
+-x-x-x-x-x--x-x-x-x-x-x-x-x--x-x-x-x-
+
+
+MODAL MANIPULATION JQUERY
+
+//rel="contato"
+
+        // $('.modal-body').html('#'+elem) // id de dentro do modal-body + o elemento 'rel 
+
+
+        // data-bs-toggle="modal" data-bs-target="#modelId"

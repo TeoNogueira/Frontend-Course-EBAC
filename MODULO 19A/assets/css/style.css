@@ -192,12 +192,13 @@ a {
 	outline: none;
 }
 .owl-theme .owl-dots .active span {
-	background-color: #3a8bcd!important;
+	background-color: #5d94b8!important;
 }
 .owl-theme .owl-dots .owl-dot span {
 	background-color: #aaa;
-	width: 8px;
-	height: 8px;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
 	display: inline-block;
 	margin: 0px 5px;
 	outline: none;
