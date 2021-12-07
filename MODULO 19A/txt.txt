@@ -58,4 +58,6 @@ MODAL MANIPULATION JQUERY
         // $('.modal-body').html('#'+elem) // id de dentro do modal-body + o elemento 'rel 
 
 
+
+
         // data-bs-toggle="modal" data-bs-target="#modelId"
