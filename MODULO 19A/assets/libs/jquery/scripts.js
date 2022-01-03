@@ -84,9 +84,81 @@ $('#form-submit').on('click', function(evt) {
             myModal.show()       
     });
 
-
+    
     // about
 
   
+
+})
+
+
+
+
+$('body').on('submit', '.modal-body .form', function(e) {
+
+    e.preventDefault();
+
+
+    const inputName = $('#nome')
+    const inputEmail = $('#email')
+
+
+    //name
+    if(inputName.val() == '') {
+
+        console.log('O campo Nome é obrigatório!');
+
+
+        inputName.addClass('invalid')
+
+        return false
+    }
+
+    // email
+
+    if( inputEmail.val() == '') {
+
+        console.log('O campo Email é obrigatório!');
+
+
+        inputEmail.addClass('invalid')
+
+        return false
+    }
+
+
+//BLUR SECTION
+
+    $('body').on('blur', '#nome', function() {
+
+        //name
+    if($(this).val() == '') {
+
+        console.log('O campo Nome é obrigatório!');
+
+
+        $(this).addClass('invalid')
+
+        return false
+    }
+
+    })
+
+    // blur email
+
+    $('body').on('blur', '#nome', function() {
+
+        //name
+    if($(this).val() == '') {
+
+        console.log('O campo Email é obrigatório!');
+
+
+        $(this).addClass('invalid')
+
+        return false
+    }
+
+    })
 
 })
