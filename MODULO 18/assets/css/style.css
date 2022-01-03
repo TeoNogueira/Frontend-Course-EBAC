@@ -3,6 +3,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.5s;
 }
+
+
 p {
 	margin-bottom: 0px;
 	font-size: 14px;
@@ -47,6 +49,10 @@ a {
 	font-weight: 700;
 	color: #1e1e1e;
 	margin-top: 15px;
+}
+
+h4:hover {
+	cursor: pointer;
 }
 
 /* Pre Header Style */
@@ -196,8 +202,9 @@ a {
 }
 .owl-theme .owl-dots .owl-dot span {
 	background-color: #aaa;
-	width: 8px;
-	height: 8px;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
 	display: inline-block;
 	margin: 0px 5px;
 	outline: none;
@@ -296,6 +303,7 @@ a {
 	transition: all 0.5s;
 }
 .footer .footer-menu a:hover {
+	cursor: pointer;
 	color: #3a8bcd;
 	text-decoration: none;
 }
@@ -318,6 +326,7 @@ a {
 	transition: all 0.5s;
 }
 .footer .social-icons a:hover {
+	
 	background-color: #3a8bcd;
 }
 
@@ -357,6 +366,7 @@ a {
 	transition: all 0.5s;
 }
 .featured .featured-item:hover h4 {
+	cursor: pointer;
 	color: #3a8bcd;
 }
 #filter button {
@@ -426,6 +436,7 @@ a {
 }
 .page-navigation ul li a:hover,
 .page-navigation ul li.current-page a {
+	
 	background-color: #3a8bcd;
 	border-color: #3a8bcd;
 	color: #fff;
@@ -521,6 +532,8 @@ a {
 	color: #3a8bcd;
 }
 .single-product .right-content .down-content span a:hover i {
+	
+
 	background-color: #3a8bcd;
 }
 .single-product .right-content .down-content span a i {

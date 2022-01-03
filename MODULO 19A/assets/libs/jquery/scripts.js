@@ -55,7 +55,7 @@ $('#form-submit').on('click', function(evt) {
     {
         evt.preventDefault();
         $('#email').animate({
-            transition: '0.5s',
+            // transition: '0.5s',
             opacity: '0.5',
          
             // opacity: 'toggle'                    
@@ -81,34 +81,12 @@ $('#form-submit').on('click', function(evt) {
 
         let myModal = new bootstrap.Modal($('#modelId'))
 
-            myModal.show()
-        
-
-       
-
+            myModal.show()       
     });
 
 
     // about
 
-    $('.nav-modal-open-about').on('click', function(e) {
-
-        e.preventDefault();
-
-        let elem = $(this).attr('rel'); 
-        // $('.modal-body').html($('#'+elem).html()) 
-        $('.modal-body').html($('#'+elem).html())
-
-        $('.modal-header h5.modal-title ').html($(this).text)
-
-        let myModal = new bootstrap.Modal($('#modelIdTwo'))
-
-            myModal.show()
-        
-
-       
-
-    });
-
+  
 
 })
