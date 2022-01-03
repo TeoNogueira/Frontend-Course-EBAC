@@ -683,6 +683,18 @@ h4:hover {
 	border: none;
 }
 
+.alternative-about h1  {
+
+	font-size: 40px !important;
+
+}
+
+.alternative-about p {
+
+	font-size: 18px;
+}
+
+
 /* Responsive Style */
 @media (max-width: 991px) {
 
