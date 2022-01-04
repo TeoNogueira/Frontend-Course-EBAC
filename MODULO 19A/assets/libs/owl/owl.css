@@ -128,6 +128,13 @@
     100% {
       opacity: 0; } }
   
+     /* Alternative  */
+
+
+     .owl-item {
+
+      padding: 5px !important;
+     }
   /*
    * 	Owl Carousel - Auto Height Plugin
    */

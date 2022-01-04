@@ -147,14 +147,12 @@ $('body').on('submit', '.modal-body .form', function(e) {
     }
 
 
-
-
     
 
 })
 
 
-//BLUR SECTION + lIBRARY (PLUGIN MASK FOR CONTROL REGEX'S)
+//BLUR SECTION + lIBRARY (PLUGIN MASK FOR CONTROL REGEX'S) + LIBRARY _UI_JQUERY
 
     $('body').on('blur', '#nome', function() {
 
