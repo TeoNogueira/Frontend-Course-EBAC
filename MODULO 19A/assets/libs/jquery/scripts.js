@@ -92,6 +92,13 @@ $('#form-submit').on('click', function(evt) {
 })
 
 
+/*
+TODO: incrementar validação
+# - checar se o nome é válido (mais de 2 caracteres);
+# - chechar se o email é válido com ao menos um @ e ".";
+
+*/
+
 
 
 // Validação
