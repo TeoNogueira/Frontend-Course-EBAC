@@ -142,6 +142,11 @@ $('body').on('submit', '.modal-body .form', function(e) {
        
     }
 
+
+
+
+    
+
 })
 
 
@@ -161,3 +166,10 @@ $('body').on('submit', '.modal-body .form', function(e) {
     
     })
 
+
+
+    $('#date').mask('00/00/0000');
+    $('#time').mask('00:00');
+    $('#cep').mask('00000-000');
+    $('#phone').mask('0000-0000');
+    $('#cpf').mask('000.000.000-00');

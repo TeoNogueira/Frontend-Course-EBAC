@@ -61,3 +61,10 @@ MODAL MANIPULATION JQUERY
 
 
         // data-bs-toggle="modal" data-bs-target="#modelId"
+
+
+
+        plugins:
+        
+        https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html
+        https://igorescobar.github.io/jQuery-Mask-Plugin/
