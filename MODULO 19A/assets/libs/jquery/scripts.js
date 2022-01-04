@@ -66,8 +66,10 @@ $('#form-submit').on('click', function(evt) {
 
 
     /*
+
     * Ouvinte de eventos .nav
-     */
+
+    */
 
     $('.nav-modal-open').on('click', function(e) {
 
@@ -168,6 +170,10 @@ $('body').on('submit', '.modal-body .form', function(e) {
     
     })
 
+$('body').on('focus', '#date', function() {
+
+    $(this).datepicker()
+})
 
     $('body').on('blur', '#date', function() {
 
