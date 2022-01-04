@@ -94,6 +94,27 @@ $('#form-submit').on('click', function(evt) {
 
 
 
+// Validação
+
+function validate( elem ) {
+
+    if( elem.val() == '') {
+
+        console.log('O campo de ' + elem.attr('name') +' é obrigatório!');
+
+
+        elem.addClass('invalid');
+
+        return false
+    } else {
+
+        elem.removeClass('invalid');
+    }
+
+}
+
+
+
 $('body').on('submit', '.modal-body .form', function(e) {
 
     e.preventDefault();
@@ -102,63 +123,34 @@ $('body').on('submit', '.modal-body .form', function(e) {
     const inputName = $('#nome')
     const inputEmail = $('#email')
 
+    validate(inputName);
+    validate(inputEmail);
 
-    //name
-    if(inputName.val() == '') {
+    if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')) {
 
-        console.log('O campo Nome é obrigatório!');
-
-
-        inputName.addClass('invalid')
-
+        console.log('verificar campos obrigatórios')
         return false
+    } else {
+        $(this).submit()
+       
     }
 
-    // email
-
-    if( inputEmail.val() == '') {
-
-        console.log('O campo Email é obrigatório!');
-
-
-        inputEmail.addClass('invalid')
-
-        return false
-    }
+})
 
 
 //BLUR SECTION
 
     $('body').on('blur', '#nome', function() {
 
-        //name
-    if($(this).val() == '') {
-
-        console.log('O campo Nome é obrigatório!');
-
-
-        $(this).addClass('invalid')
-
-        return false
-    }
-
+        validate($(this));
     })
 
     // blur email
 
-    $('body').on('blur', '#nome', function() {
+    $('body').on('blur', '#email', function() {
 
-        //name
-    if($(this).val() == '') {
-
-        console.log('O campo Email é obrigatório!');
-
-
-        $(this).addClass('invalid')
-
-        return false
-    }
-
+  
+        validate($(this));
+    
     })
 
-})
