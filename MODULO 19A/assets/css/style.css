@@ -869,7 +869,21 @@ p {
 		font-size: 12px;
 	}
 
+	input#form-submit.button.btn.btn-dark {
 
+		position: relative;
+		left: 1px;
+
+	}
+
+	h4, h6 {
+		font-size: 12px !important;
+	}
+	img {
+		width: 60px !important;
+		position: relative;
+		right: 7px;
+	}
 }
 
 
