@@ -110,11 +110,13 @@ function validate( elem ) {
         console.log('O campo de ' + elem.attr('name') +' é obrigatório!');
 
 
+        elem.parent().find('.text-muted').show();
+
         elem.addClass('invalid');
 
         return false
     } else {
-
+        elem.parent().find('.text-muted').hide();
         elem.removeClass('invalid');
     }
 
@@ -150,7 +152,7 @@ $('body').on('submit', '.modal-body .form', function(e) {
 })
 
 
-//BLUR SECTION
+//BLUR SECTION + lIBRARY (PLUGIN MASK FOR CONTROL REGEX'S)
 
     $('body').on('blur', '#nome', function() {
 
@@ -167,9 +169,44 @@ $('body').on('submit', '.modal-body .form', function(e) {
     })
 
 
+    $('body').on('blur', '#date', function() {
 
+        validate($(this));    
     $('#date').mask('00/00/0000');
-    $('#time').mask('00:00');
-    $('#cep').mask('00000-000');
+    
+    })
+
+    
+    $('body').on('blur', '#time', function() {
+
+  
+        validate($(this));
+    
+        $('#time').mask('00:00');
+    })
+
+    $('body').on('blur', '#cep', function() {
+
+  
+        validate($(this));
+        $('#cep').mask('00000-000');
+    
+    })
+
+    $('body').on('blur', '#phone', function() {
+
+  
+        validate($(this));
+        
     $('#phone').mask('0000-0000');
-    $('#cpf').mask('000.000.000-00');
+    
+    })
+
+    $('body').on('blur', '#cpf', function() {
+  
+        validate($(this));
+        $('#cpf').mask('000.000.000-00');
+    })
+
+
+
