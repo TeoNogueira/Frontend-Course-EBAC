@@ -858,6 +858,21 @@ p {
 
 }
 
+
+@media(max-width: 440px) {
+
+	#sobre {
+
+		height: 150px;
+	}
+	
+
+
+
+
+}
+
+
 @media(max-width: 375px) {
 
 

@@ -42,6 +42,55 @@ $('.featured-item a').on('click', function(event) {
 
 
 
+$('#form-submit').on('click', function(evt) {
+
+
+    evt.preventDefault();
+
+    if($('#email').val() != '')
+    {
+        evt.preventDefault();
+        $('#email').animate({
+            // transition: '0.5s',
+            opacity: '0.5',
+         
+            // opacity: 'toggle'                    
+
+        })
+
+    }
+
+
+    /*
+
+    * Ouvinte de eventos .nav
+
+    */
+
+    $('.nav-modal-open').on('click', function(e) {
+
+        e.preventDefault();
+
+        let elem = $(this).attr('rel'); 
+        // $('.modal-body').html($('#'+elem).html()) 
+        $('.modal-body').html($('#'+elem).html())
+
+        $('.modal-header h5.modal-title ').html($(this).text)
+
+        let myModal = new bootstrap.Modal($('#modelId'))
+
+            myModal.show()       
+    });
+
+    
+    // about
+
+  
+
+})
+
+
+
 
 // hide
 // show()
