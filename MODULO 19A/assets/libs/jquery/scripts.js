@@ -29,6 +29,9 @@ $(document).ready(function($){
 
 
 
+
+
+
 // const duracao = 2000
 
 

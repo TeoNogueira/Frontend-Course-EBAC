@@ -945,3 +945,14 @@ p {
 
 	display: none;
 }
+
+
+
+
+.zindex-before {
+
+	position: relative;
+	z-index: 1;
+
+
+}
