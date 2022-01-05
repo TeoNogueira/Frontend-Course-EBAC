@@ -803,10 +803,10 @@ a {
 .row-custom {
 	margin-top: 38px;
 }
-
+/* 
 p {
 	display: none;
-} 
+}  */
 .modify-media input{
 
 	margin: 15px;
@@ -822,6 +822,12 @@ p {
 	display: none !important;
 
 }
+
+#sobre {
+
+	height: 120px;
+}
+
 
 }
 
@@ -876,14 +882,24 @@ p {
 
 	}
 
+	#sobre {
+
+		height: 150px;
+	}
+	
+
 }
 
 @media(max-width: 320px) {
 
+	#sobre {
+
+		height: 190px;
+	}
 
 	.btn.btn-dark {
 		position: relative;
-		left: -13px !important;
+		left: -1px !important;
 		height: 32px !important;
 		
 	

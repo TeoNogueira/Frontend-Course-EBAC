@@ -54,3 +54,118 @@ $('.featured-item a').on('click', function(event) {
 'background': '#bbbbaa',
 instancia por objeto
 })*/
+
+
+
+
+// Validação
+
+function validate( elem ) {
+
+    if( elem.val() == '') {
+
+        console.log('O campo de ' + elem.attr('name') +' é obrigatório!');
+
+
+        elem.parent().find('.text-muted').show();
+
+        elem.addClass('invalid');
+
+        return false
+    } else {
+        elem.parent().find('.text-muted').hide();
+        elem.removeClass('invalid');
+    }
+
+}
+
+
+
+$('body').on('submit', '.modal-body .form', function(e) {
+
+    e.preventDefault();
+
+
+    const inputName = $('#nome')
+    const inputEmail = $('#email')
+
+    validate(inputName);
+    validate(inputEmail);
+
+    if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')) {
+
+        console.log('verificar campos obrigatórios')
+        return false
+    } else {
+        $(this).submit()
+       
+    }
+
+
+    
+
+})
+
+
+//BLUR SECTION + lIBRARY (PLUGIN MASK FOR CONTROL REGEX'S) + LIBRARY _UI_JQUERY
+
+    $('body').on('blur', '#nome', function() {
+
+        validate($(this));
+    })
+
+    // blur email
+
+    $('body').on('blur', '#email', function() {
+
+  
+        validate($(this));
+    
+    })
+
+$('body').on('focus', '#date', function() {
+
+    $(this).datepicker()
+})
+
+    $('body').on('blur', '#date', function() {
+
+        validate($(this));    
+    $('#date').mask('00/00/0000');
+    
+    })
+
+    
+    $('body').on('blur', '#time', function() {
+
+  
+        validate($(this));
+    
+        $('#time').mask('00:00');
+    })
+
+    $('body').on('blur', '#cep', function() {
+
+  
+        validate($(this));
+        $('#cep').mask('00000-000');
+    
+    })
+
+    $('body').on('blur', '#phone', function() {
+
+  
+        validate($(this));
+        
+    $('#phone').mask('0000-0000');
+    
+    })
+
+    $('body').on('blur', '#cpf', function() {
+  
+        validate($(this));
+        $('#cpf').mask('000.000.000-00');
+    })
+
+
+
