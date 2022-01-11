@@ -3,7 +3,29 @@
 
 $(document).ready(function($){
 
-    $('.owl-carousel').owlCarousel() ;
+    $('.owl-carousel').owlCarousel({
+        // loop: true,
+        // nav: false,
+        // dots: false,
+       
+        responsive: {
+            // 0:{
+            //     items: 3,
+            // },
+            320:{
+                // nav: true,
+                // first: 3,
+                // items: 1,
+                // dots: false,
+                // dots: false,
+                // loop: true
+            },
+            375:{
+                items: 3,
+            },
+         
+        }
+    }) ;
 
     let titulos = $('h4') // selecionar tag
     let itens = $('.featured-item') // '' '' class
@@ -20,7 +42,9 @@ $(document).ready(function($){
             'color': '#ff0',
             // 'background': '#ff0',
             'font-weight': '100',
-        })
+        });
+
+     
 
        }) 
 

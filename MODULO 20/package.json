@@ -9,6 +9,11 @@
   "keywords": [],
   "author": "Teo Nogueira",
   "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0"
+  },
   "dependencies": {
     "g": "^2.0.1",
     "gulp-cli": "^2.3.0"

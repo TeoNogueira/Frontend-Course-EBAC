@@ -1,3 +1,17 @@
 npm init -y
 
-npm install gulp-cli g   <<<<<<<< (G === Global)
+npm install gulp-cli g   <<<<<<<< (G === Global);
+
+
+.gitignore <3
+
+para gerar o dist específico do GULP: btn
+gulp styles ou gulp --tasks 
+
+## unificar arquivos:
+npm install gulp-concat gulp-cssmin --save-dev
+
+
+-x-x-x-x-
+
+npm cache clean --force
