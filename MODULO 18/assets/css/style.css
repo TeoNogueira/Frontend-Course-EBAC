@@ -615,6 +615,7 @@ h4:hover {
 
 
 /* Contact Page Style */
+
 .contact-page {
 	margin-top: 50px;
     margin-bottom: 80px;
@@ -870,6 +871,7 @@ p {
 
 }
 
+
 @media(max-width: 440px) {
 
 	#sobre {
@@ -882,6 +884,7 @@ p {
 
 
 }
+
 
 @media(max-width: 375px) {
 
@@ -922,13 +925,13 @@ p {
 		height: 190px;
 	}
 
-	.btn.btn-dark {
+	/* .btn.btn-dark {
 		position: relative;
 		left: -1px !important;
 		height: 32px !important;
 		
 	
-	}	
+	}	 */
 	
 	.btn.btn-dark.stretch-link {
 	
@@ -997,3 +1000,49 @@ p {
 
 
 }
+
+
+/* owl-item */
+
+@media (max-width: 375px) {
+
+div.owl-item {
+
+	width:  auto !important;
+	width: 350px !important;
+	
+}
+
+
+}
+
+ @media (max-width: 320px) {
+
+	/* div.owl-item {
+		width:  auto !important;
+		width: 290px !important;
+	}
+	
+	 */
+	 a img {
+
+		width: 160px !important;
+	 }
+
+	 div.owl-stage {
+	
+		 width: 955px !important;
+		}
+	 div.owl-item {
+		padding-right: 8px !important;
+		width:  auto !important;
+		width: 300px !important;
+
+	 }
+	
+	 div.featured-item img {
+
+		width: 258px !important;
+		
+	 }
+	} 
