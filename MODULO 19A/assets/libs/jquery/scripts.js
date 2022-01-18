@@ -49,6 +49,15 @@ $(document).ready(function($){
        }) 
 
 
+//manipulação de evento
+
+
+$('.featured-item a').on('click', function(event) {
+
+    event.preventDefault();
+
+    alert('Produto comprado com sucesso!');
+});
 
 
 
