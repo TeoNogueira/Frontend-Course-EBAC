@@ -11,7 +11,7 @@ gulp styles ou gulp --tasks
 ## unificar arquivos:
 npm install gulp-concat gulp-cssmin --save-dev
 
-
+npm install gulp-uglify --save-dev
 -x-x-x-x-
 
 npm cache clean --force
