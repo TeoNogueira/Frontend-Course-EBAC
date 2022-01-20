@@ -35,7 +35,7 @@ return gulp.src('./vendor/**/*.js')
 
 function tarefasIMG() {
 
-return gulp.task('image',  () => {
+
     gulp.src('./src/img/*')
     .pipe(image({
     
@@ -52,10 +52,9 @@ return gulp.task('image',  () => {
     }))
     .pipe(webp())
     .pipe(gulp.dest('./dist/images'))
-    
-    }
+       
 
-)
+
 }
 
 
