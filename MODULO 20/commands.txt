@@ -15,3 +15,10 @@ npm install gulp-uglify --save-dev
 -x-x-x-x-
 
 npm cache clean --force
+
+
+-x-x-x--x-x-x-x
+
+remover do git o cache de algo ex "dist":
+
+git rm -r --cached dist
