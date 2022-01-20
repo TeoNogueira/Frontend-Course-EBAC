@@ -22,3 +22,30 @@ npm cache clean --force
 remover do git o cache de algo ex "dist":
 
 git rm -r --cached dist
+
+
+
+-x-x-x-x--x-x-x-x-x-x-x-x
+
+npm install gulp-image --save-dev
+minhas alterações para o gulp:
+instalei o como dependencia o gulp-webp
+
+=x=x=x=x=x=x==x=x=x=x=x
+
+
+## Rodar o Projeto
+
+
+- Executar o comando:
+
+```
+npm install
+
+```
+
+resolvendo erro do esm que nao importa!
+npm i -D sucrase
+
+Uma vez que a instalação finalizou, tente executar o arquivo com:
+npx sucrase-node index.js
