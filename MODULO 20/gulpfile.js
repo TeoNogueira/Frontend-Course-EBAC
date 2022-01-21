@@ -14,9 +14,9 @@ const webp = require('gulp-webp');
 
 function tarefasCSS(cb) {
 
-    return gulp.src(['./vendor/**/*.css', './vendor/owl/owl.css', './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css', './vendor/jqueryUI/jquery-ui.css'
+    return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css', './node_modules/@fortawesome/fontawesome/fontawesome.css', './vendor/owl/owl.css', './vendor/jqueryUI/jquery-ui.min.css', './dist/css/style.css'
 ])
-    .pipe(gulpConcat('libs.css'))
+    .pipe(gulpConcat('styles.css'))
     .pipe(cssMin())
     .pipe(rename({suffix: '.min'})) // libs.min.css
     .pipe(gulp.dest('./dist/css'))
@@ -25,8 +25,8 @@ function tarefasCSS(cb) {
 
 function tarefasJS() {
 
-return gulp.src('./vendor/**/*.js')
-.pipe(gulpConcat('libs.js'))
+return gulp.src(['./node_modules/jquery/dist/jquery.js', './vendor/bootstrap/js/bootstrap.js', './vendor/owl/owl.js', './vendor/jqueryMask/jquery.mask.min.js', './vendor/jqueryUI/jquery-ui.min.js', './vendor/bootstrap/old/oldversion.js', './vendor/jquery/scripts.js'])
+.pipe(gulpConcat('scripts.js'))
 .pipe(uglify())
 .pipe(rename({suffix: '.min'}))
 .pipe(gulp.dest('./dist/js'))
