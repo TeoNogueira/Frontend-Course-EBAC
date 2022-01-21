@@ -14,7 +14,8 @@ const webp = require('gulp-webp');
 
 function tarefasCSS(cb) {
 
-    return gulp.src('./vendor/**/*.css')
+    return gulp.src(['./vendor/**/*.css', './vendor/owl/owl.css', './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css', './vendor/jqueryUI/jquery-ui.css'
+])
     .pipe(gulpConcat('libs.css'))
     .pipe(cssMin())
     .pipe(rename({suffix: '.min'})) // libs.min.css

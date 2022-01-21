@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap/-grid.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css"> -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./vendor/owl/owl.css">
  
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+
+    <!-- <link rel="stylesheet" href="./dist/css/libs.min.css"> -->
     <title>JQuery</title>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark static-top  zindex-before">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./assets/img/header-logo.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./dist/images/header-logo.webp" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,7 +72,7 @@
                 <div class="col-md-12" id="prod-link">
                     <div class="owl-carousel owl-theme">
                         <div class="featured-item">
-                            <img src="./assets/img/byzance.webp" alt="Item 1">
+                            <img src="./dist/images/byzance.webp" alt="Item 1">
                             <h4>Byz-Custom</h4>
                             <h6>R$ 920,00</h6>
                             <a href="single-product.html">
@@ -74,7 +80,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/jazz-thin-hihat.webp" alt="Item 2">
+                            <img src="./dist/images/jazz-thin-hihat.webp" alt="Item 2">
                             <h4>Jazz-thin-hihat</h4>
                             <h6>R$ 830,00</h6>
                             <a href="single-product.html">
@@ -82,7 +88,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/byz-dark.webp" alt="Item 3">
+                            <img src="./dist/images/byz-dark.webp" alt="Item 3">
                             <h4>Byz-Dark-Custom</h4>
                             <h6>R$ 999,00</h6>
                             <a href="single-product.html">
@@ -90,7 +96,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/classic-ride.webp" alt="Item 4">
+                            <img src="./dist/images/classic-ride.webp" alt="Item 4">
                             <h4>C-Ride</h4>
                             <h6>R$ 2.500,00</h6>
                             <a href="single-product.html">
@@ -98,7 +104,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/dark-ride.webp" alt="Item 5">
+                            <img src="./dist/images/dark-ride.webp" alt="Item 5">
                             <h4>Dark Ride</h4>
                             <h6>R$ 3.800,00</h6>
                             <a href="single-product.html">
@@ -106,7 +112,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/byz-ride.webp" alt="Item 6">
+                            <img src="./dist/images/byz-ride.webp" alt="Item 6">
                             <h4>Byz-ride</h4>
                             <h6>R$ 2.890,00</h6>
                             <a href="single-product.html">
@@ -114,7 +120,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/c-china.webp" alt="Item 7">
+                            <img src="./dist/images/c-china.webp" alt="Item 7">
                             <h4>Classic China</h4>
                             <h6>R$ 1.890,00</h6>
                             <a href="single-product.html">
@@ -122,7 +128,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/g-china.webp" alt="Item 8">
+                            <img src="./dist/images/g-china.webp" alt="Item 8">
                             <h4>Generation China</h4>
                             <h6>R$ 3.200,00</h6>
                             <a href="single-product.html">
@@ -130,7 +136,7 @@
                             </a>
                         </div>
                         <div class="featured-item">
-                            <img src="./assets/img/b-china.webp" alt="Item 9">
+                            <img src="./dist/images/b-china.webp" alt="Item 9">
                             <h4>Byzance China</h4>
                             <h6>R$ 2.820,00</h6>
                             <a href="single-product.html">
@@ -188,7 +194,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="logo">
-                    <img src="assets/img/header-logo.png" alt="">
+                    <img src="dist/images/header-logo.png" alt="">
                 </div>
             </div>
             <div class="col-md-12">
@@ -356,15 +362,17 @@
     
    <!-- Libraries -->
     
-    <script src="./assets/libs/jquery/jquery.min.js"></script>   
-    <script src="./assets/libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./assets/libs/owl/owl.js"></script>
-    <script src="./assets/libs/jqueryMask/jquery.mask.min.js"></script>
-    <script src="./assets/libs/jqueryUI/jquery-ui.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>   
+    <script src="./vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="./vendor/owl/owl.js"></script>
+    <script src="./vendor/jqueryMask/jquery.mask.min.js"></script>
+    <script src="./vendor/jqueryUI/jquery-ui.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
  <!-- Scripts -->
 
-    <script src="./assets/libs/jquery/scripts.js"></script>
+    <script src="./dist/js/libs.min.js"></script>
+    <script src="./vendor/jquery/scripts.js"></script>
+    
 </body>
 </html>

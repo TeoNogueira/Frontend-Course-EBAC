@@ -44,8 +44,7 @@ npm install
 
 ```
 
-resolvendo erro do esm que nao importa!
-npm i -D sucrase
+resolvendo erro do ESM "que nao importa!"
+re-instalar o gulp image com versões antigas exemplo abaixo:
 
-Uma vez que a instalação finalizou, tente executar o arquivo com:
-npx sucrase-node index.js
+npm install --save-dev gulp-image@6.2.1 
