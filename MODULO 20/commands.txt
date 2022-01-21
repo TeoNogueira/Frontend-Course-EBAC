@@ -48,3 +48,7 @@ resolvendo erro do ESM "que nao importa!"
 re-instalar o gulp image com versões antigas exemplo abaixo:
 
 npm install --save-dev gulp-image@6.2.1 
+
+
+
+ULTIMO PASSO: GERAR DE TODOS OS CAMINHOS DO CSS E JS (GULP STYLES, GULP SCRIPTS), CSS MINIFICADO E JS MINIFICADO
