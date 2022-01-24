@@ -1,3 +1,4 @@
+const {parallel} = require('gulp');
 const gulp = require('gulp');
 
 
@@ -12,6 +13,10 @@ const image = require('gulp-image');
 // import image from 'gulp-image'
 const webp = require('gulp-webp');
 
+// HTML MINIFIER
+
+const htmlmin = require('gulp-htmlmin');
+
 function tarefasCSS(cb) {
 
     return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css', './node_modules/@fortawesome/fontawesome/fontawesome.css', './vendor/owl/owl.css', './vendor/jqueryUI/jquery-ui.min.css', './dist/css/style.css'
@@ -21,23 +26,23 @@ function tarefasCSS(cb) {
     .pipe(rename({suffix: '.min'})) // libs.min.css
     .pipe(gulp.dest('./dist/css'))
 
+    
 }
 
-function tarefasJS() {
+function tarefasJS(cb) {
 
-return gulp.src(['./node_modules/jquery/dist/jquery.js', './vendor/bootstrap/js/bootstrap.js', './vendor/owl/owl.js', './vendor/jqueryMask/jquery.mask.min.js', './vendor/jqueryUI/jquery-ui.min.js', './vendor/bootstrap/old/oldversion.js', './vendor/jquery/scripts.js'])
+    return gulp.src(['./node_modules/jquery/dist/jquery.js', './vendor/bootstrap/js/bootstrap.js', './vendor/owl/owl.js', './vendor/jqueryMask/jquery.mask.min.js', './vendor/jqueryUI/jquery-ui.min.js', './vendor/bootstrap/old/oldversion.js', './vendor/jquery/scripts.js'])
 .pipe(gulpConcat('scripts.js'))
 .pipe(uglify())
 .pipe(rename({suffix: '.min'}))
 .pipe(gulp.dest('./dist/js'))
 
-
 }
 
-function tarefasIMG() {
+function tarefasIMG(cb) {
 
 
-    gulp.src('./src/img/*')
+    return gulp.src('./src/img/*')
     .pipe(image({
     
         pngquant: true,
@@ -55,13 +60,32 @@ function tarefasIMG() {
     .pipe(gulp.dest('./dist/images'))
        
 
-
+    
 }
 
 
 
-exports.styles = tarefasCSS()
+// POC - Proof of Concept
 
-exports.scripts = tarefasJS()
+function tarefasHTML(cb)
+ {
 
-exports.images = tarefasIMG()
+    return gulp.src('./**/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./dist'))
+ 
+
+
+ }
+
+
+
+
+exports.styles = tarefasCSS
+
+exports.scripts = tarefasJS
+
+exports.images = tarefasIMG
+
+
+exports.default = parallel(tarefasHTML, tarefasJS)
