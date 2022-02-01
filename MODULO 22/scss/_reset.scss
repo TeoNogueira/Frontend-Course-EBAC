@@ -1,0 +1,134 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+div, 
+p {
+    display: block;
+}
+
+header,
+section
+ {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+header {
+
+    position: fixed;
+    top: -32px;
+    background-color: $color-05;
+    opacity: 0.8;
+   
+}
+
+section {
+    // padding: 0;
+    margin-top: 90px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: $font-family-default;
+    font-size: $font-small;
+    color: $color-default;
+}
+
+p {
+    color: $color-04;
+    font-size: $font-normal;
+    margin-bottom: $mb;
+    text-align: $align;
+}
+
+h1 {
+    color: $color-04;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $font-big;
+    margin-top: $mt-02;
+}
+
+h2 {
+    color: $color-02;
+    font-size: $font-medium;
+}
+
+h3 {
+    color: $color-04;
+    font-size: $font-normal;
+}
+
+
+footer {
+    background-color: $bg-color
+}
+
+
+.audi {
+
+    img {
+        width: 120px !important;
+        height: 90px !important;
+
+    }
+}
+
+
+.audi-wallpaper {
+
+    border-radius: 6px;
+}
+
+.mb {
+
+    margin-bottom: $mb;
+}
+
+.mt {
+
+    margin-top: $mt-03;
+}
+
+
+.zin-10 {
+
+    z-index: $z;
+    
+}
+
+.zin {
+
+    position: relative;
+    z-index: 1;
+}
+
+.m-left-right {
+
+    margin: 0 5px;
+}
+
+.copyright {
+
+
+padding: 250px;
+
+
+}
