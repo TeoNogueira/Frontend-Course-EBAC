@@ -1,0 +1,54 @@
+npm init -y
+
+npm install gulp-cli g   <<<<<<<< (G === Global);
+
+
+.gitignore <3
+
+para gerar o dist específico do GULP: btn
+gulp styles ou gulp --tasks 
+
+## unificar arquivos:
+npm install gulp-concat gulp-cssmin --save-dev
+
+npm install gulp-uglify --save-dev
+-x-x-x-x-
+
+npm cache clean --force
+
+
+-x-x-x--x-x-x-x
+
+remover do git o cache de algo ex "dist":
+
+git rm -r --cached dist
+
+
+
+-x-x-x-x--x-x-x-x-x-x-x-x
+
+npm install gulp-image --save-dev
+minhas alterações para o gulp:
+instalei o como dependencia o gulp-webp
+
+=x=x=x=x=x=x==x=x=x=x=x
+
+
+## Rodar o Projeto
+
+
+- Executar o comando:
+
+```
+npm install
+
+```
+
+resolvendo erro do ESM "que nao importa!"
+re-instalar o gulp image com versões antigas exemplo abaixo:
+
+npm install --save-dev gulp-image@6.2.1 
+
+
+
+ULTIMO PASSO: GERAR DE TODOS OS CAMINHOS DO CSS E JS (GULP STYLES, GULP SCRIPTS), CSS MINIFICADO E JS MINIFICADO

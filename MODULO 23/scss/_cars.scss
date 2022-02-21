@@ -1,16 +1,34 @@
+@mixin theme($theme: $color-04, $bg: $color-03) {
+
+    border: 1px solid $theme ;
+    background: $bg;
+
+}
+
+
 .cars {
+
 
     h2 {
         color: $color-02;
     }
 
+li {
+
+@include theme;
+
+}
+
+
     li {
+
+
 
         color: $color-01;
    
 
     a {
-
+        @include theme($theme: $color-default, $bg: #c121aa);
         background-color: $color-default;
     }
 

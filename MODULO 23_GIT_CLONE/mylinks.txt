@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css"> -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./vendor/owl/owl.css">
+    <link rel="stylesheet" href="./vendor/jqueryUI/jquery-ui.min.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+
+
+
+-x-x-x-x-x-x--x-x-x-x-x-x-x-x-x-x-x-x-x-x-x--x-x-x-x-x-x-x-x--x-x-x-x-x-x
+
+scripts:
+
+ <!-- Libraries -->
+    
+    <script src="./node_modules/jquery/dist/jquery.js"></script>   
+    <script src="./vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="./vendor/owl/owl.js"></script>
+    <script src="./vendor/jqueryMask/jquery.mask.min.js"></script>
+    <script src="./vendor/jqueryUI/jquery-ui.min.js"></script>
+    <script src="./vendor/bootstrap/old/oldversion.js"></script>
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+ <!-- Scripts -->
+
+    <script src="./dist/js/libs.min.js"></script>
+
+    <script src="./vendor/jquery/scripts.js"></script>
+

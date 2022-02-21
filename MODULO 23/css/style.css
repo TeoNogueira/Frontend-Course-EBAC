@@ -153,9 +153,15 @@ footer {
   color: #999;
 }
 .cars li {
+  border: 1px solid #222;
+  background: #f00;
+}
+.cars li {
   color: #f55;
 }
 .cars li a {
+  border: 1px solid #444;
+  background: #c121aa;
   background-color: #444;
 }
 
