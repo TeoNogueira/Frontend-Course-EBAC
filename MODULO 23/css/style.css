@@ -1,0 +1,162 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div,
+p {
+  display: block;
+}
+
+header,
+section {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+header {
+  position: fixed;
+  top: -32px;
+  background-color: #86a2c7;
+  opacity: 0.8;
+}
+
+section {
+  margin-top: 90px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+p {
+  color: #222;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+h1 {
+  color: #222;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  color: #999;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: #222;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #ddd;
+}
+
+.audi img {
+  width: 120px !important;
+  height: 90px !important;
+}
+
+.audi-wallpaper {
+  border-radius: 6px;
+}
+
+.mb {
+  margin-bottom: 1.5rem;
+}
+
+.mt {
+  margin-top: 5rem;
+}
+
+.zin-10 {
+  z-index: 10;
+}
+
+.zin {
+  position: relative;
+  z-index: 1;
+}
+
+.m-left-right {
+  margin: 0 5px;
+}
+
+.copyright {
+  padding: 250px;
+}
+
+.blocks {
+  padding: 3rem 0;
+}
+.blocks h2 {
+  color: #f55;
+}
+.blocks ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  padding: 1rem 0;
+  width: 100%;
+}
+.blocks li {
+  color: #999;
+  display: block;
+  margin: 1.5rem auto;
+  width: 30%;
+}
+.blocks li .img-container {
+  display: block;
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+.blocks li a {
+  background-color: #f55;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 2.2rem;
+  margin: 3rem auto 1.5rem;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cars h2 {
+  color: #999;
+}
+.cars li {
+  color: #f55;
+}
+.cars li a {
+  background-color: #444;
+}
+
+/*# sourceMappingURL=style.css.map */
