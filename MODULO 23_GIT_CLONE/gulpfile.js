@@ -9,6 +9,7 @@ const stripJs = require('gulp-strip-comments')
 const stripCss = require('gulp-strip-css-comments')
 const htmlmin = require('gulp-htmlmin')
 const babel = require('gulp-babel')
+const sass = require('gulp-sass')(require('node-sass'));
 const browserSync = require('browser-sync').create()
 const { pipe } = require('stdout-stream')
 const { contains } = require('jquery')
@@ -30,6 +31,19 @@ function tarefasCSS(cb) {
 
     cb()
 
+}
+
+
+function tarefasSASS(cb) {
+
+gulp.src('./src/scss/**/*.scss')
+.pipe(sass())
+.pipe(gulp.dest('./dist/css'))
+
+
+
+
+cb()
 }
 
 
@@ -101,11 +115,11 @@ function end(cb){
 }
 
 // series x parallel
-const process = parallel( tarefasHTML, tarefasJS, tarefasCSS, end)
+const process = parallel( tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
-
+exports.sass = tarefasSASS
 
 exports.default = process
