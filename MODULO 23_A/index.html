@@ -114,10 +114,19 @@
       
       
         <div class="text-center p-3 d-flex-end" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
+          © <span class="date-copyright"> Copyright</span>
           <a class="text-white" href="https://github.com/TeoNogueira" target="_blank" >Teo Nogueira</a>
         </div>
        
       </footer>
+
+      <script>
+
+        const cCurrentDate = new Date();
+        const actuallyDate = cCurrentDate.getFullYear();
+
+        document.querySelector('.date-copyright').prepend(actuallyDate)
+
+      </script>
 </body>
 </html>
