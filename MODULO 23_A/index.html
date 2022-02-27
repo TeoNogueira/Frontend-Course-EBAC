@@ -90,7 +90,7 @@
     </section>
 
 
-    <footer class="text-center text-white" style="background-color: #45637d;">
+    <footer class="text-center text-white" style="background: linear-gradient(#45637d, #51869e);">
         <!-- Grid container -->
         <div class="container p-4">
           <!--  Frame -->
@@ -114,7 +114,7 @@
       
       
         <div class="text-center p-3 d-flex-end" style="background-color: rgba(0, 0, 0, 0.2);">
-          © <span class="date-copyright"> Copyright</span>  
+          © <span class="date-copyright"></span>  
           <a class="text-white" href="https://github.com/TeoNogueira" target="_blank" >Teo Nogueira</a>
         </div>
        
@@ -125,7 +125,7 @@
         const cCurrentDate = new Date();
         const actuallyDate = cCurrentDate.getFullYear();
 
-        document.querySelector('.date-copyright').prepend(actuallyDate);
+        document.querySelector('.date-copyright').innerHTML = `${actuallyDate} copyright`;
 
       </script>
 </body>
