@@ -1,15 +1,20 @@
 .cars {
 
-    h2 {
+&__title {
         color: $color-02;
     }
 
-    li {
+&__item {
 
         color: $color-01;
    
 
-    a {
+        &--destack {
+
+            @include theme; 
+        }
+
+    &__button {
 
         background-color: $color-default;
     }

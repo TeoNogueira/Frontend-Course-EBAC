@@ -1,23 +1,34 @@
-%blocks {
+.blocks {
 
     /*
-    
+
     BEM CSS
     - Block
     - Element
     - Modifier
 
+    - Design paterns
 
+
+    Exemplo:
+    .cars__title
+    .cars__list
+    .cars__item
+    .cars__item--destack
+    .cars__button
+    .cars__img-container
+
+    .b__e
     */
 
     padding: 3rem 0;
 
-h2 {
+&__title {
 
     color: $color-01;
 }
 
-ul {
+&__list {
 
     list-style-type: none;
     font-size: $font-small;
@@ -31,7 +42,7 @@ ul {
 
 }
 
-li {
+&__item {
     color: $color-02;
     display: block;
     margin: $space-default auto;
@@ -46,7 +57,7 @@ li {
 }
 
 
-.img-container {
+&__img-container {
 
 
 display: block;
@@ -62,7 +73,7 @@ width: 100%;
 }
 
 
-a {
+&__button {
 
     background-color: $color-01;
     border-radius: 5px;
